@@ -26,6 +26,7 @@
 	background: #f29b10;
 	
 	background: radial-gradient(red 10%, #f29b10 30%, #1098f2 50%);
+	background-size: cover;
 	height: 100%;
 	background-repeat: no-repeat;
 }
