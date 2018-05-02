@@ -23,7 +23,7 @@
 
 .body1 {
 	background: #f29b10;
-	background: linear-gradient(to bottom right, #f29b10, #1098f2);
+	background: linear-gradient(red, #f29b10, #1098f2);
 	height: 100%
 	background-repeat: no-repeat;
 }
