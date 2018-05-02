@@ -4,8 +4,8 @@
 	<meta charset="utf-8" />
 	<title> Klenton's Home Page </title>
 	<link rel="stylesheet" type="text/css" href="homepage.css"/>
-	<script type="text/javascript" src="homepage.js"></script>
-
+	<!--<script type="text/javascript" src="homepage.js"></script>
+-->
 </head>
 	
 <body>
