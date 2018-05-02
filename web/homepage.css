@@ -22,6 +22,7 @@
 
 .body {
 	background-image: url('ghostRecon.jpg');
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 
 }
