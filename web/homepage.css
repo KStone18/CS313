@@ -22,7 +22,10 @@
 
 
 .body1 {
-	background: linear-gradient(to bottom right, red, yellow);
+	background-color: #1098f2
+	background: linear-gradient(to bottom right, red, #1098f2);
+	height: 100%
+	background-repeat: no-repeat;
 }
 .body {
 	background-image: url('ghostRecon.jpg');
