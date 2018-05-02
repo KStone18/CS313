@@ -1,5 +1,5 @@
 .top {
-	text-align: right;
+	
 	width: 100%;
 	height: 250px;
 	background-position: 50% 50%;
@@ -9,13 +9,14 @@
 }
 
 .assign{
-	
+	text-align: right;
 	color: #ff9933;
 	font-size: 1.5em;
 }
 
 .name {
 	text-align: left;
+	text-indent: 50px
 	color: #ff9933;
 	font-size: 2em;
 }
