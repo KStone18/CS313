@@ -20,6 +20,10 @@
 	font-size: 1.5em;
 }
 
+
+.body1 {
+	background: linear-gradient(to bottom right, red, yellow);
+}
 .body {
 	background-image: url('ghostRecon.jpg');
 	background-size: 100%;
