@@ -2,15 +2,12 @@
 	text-align: right;
 	width: 100%;
 	height: 250px;
-	background-position: 50% 50%;
-	background-image: url('recon.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
+	
 }
 
 .assign{
 	padding-left: 20px;
-	color: #ff9933;
+	color: #1098f2;
 	font-size: .8em;
 }
 
@@ -21,4 +18,10 @@
 	text-align: left;
 	color: #1098f2;
 	font-size: 1.5em;
+}
+
+.body {
+	background-image: url('ghostRecon.jpg');
+	background-repeat: no-repeat;
+
 }
