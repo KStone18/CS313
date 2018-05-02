@@ -8,16 +8,16 @@
 
 .assign{
 	padding-left: 20px;
-	color: #1098f2;
+	color: red;
 	font-size: .8em;
 }
 
-.name {
+.page {
 	width: 500px;
 	padding-left: 10px;
 	padding-top: 20px;
 	text-align: left;
-	color: #1098f2;
+	color: red;
 	font-size: 1.5em;
 }
 
