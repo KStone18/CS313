@@ -22,6 +22,7 @@
 
 
 .body1 {
+	background-size: 100%;
 	background: #f29b10;
 	background: linear-gradient(red, #f29b10, #1098f2);
 	height: 100%
