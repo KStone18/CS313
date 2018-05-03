@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html class="body1">
+<html>
 <head> 
 	<meta charset="utf-8" />
 	<title> Klenton's Home Page </title>
@@ -8,7 +8,7 @@
 
 </head>
 	
-<body>
+<body class="body1">
 
 	<div class="top">
 		<div class="page"> Home Page
