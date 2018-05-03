@@ -23,7 +23,7 @@
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
+    <div class="numbertext" onload="currentSlide(1)">1 / 6</div>
       <img src="pic1w.png" style="width:100%">
   </div>
 
@@ -64,22 +64,22 @@
   <!-- Thumbnail images -->
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="pic1w.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="pic1w.png" style="width:100%" onclick="currentSlide(1)" alt="Ghost Recon">
     </div>
     <div class="column"> 
-      <img class="demo cursor" src="pic2w.png" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      <img class="demo cursor" src="pic2w.png" style="width:100%" onclick="currentSlide(2)" alt="Payette National Forest Fire Crew">
     </div>
     <div class="column">
-      <img class="demo cursor" src="pic3w.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="pic3w.png" style="width:100%" onclick="currentSlide(3)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="pic4w.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="pic4w.png" style="width:100%" onclick="currentSlide(4)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="pic5w.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="pic5w.png" style="width:100%" onclick="currentSlide(5)" alt="">
     </div> 
     <div class="column">
-      <img class="demo cursor" src="pic6w.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="pic6w.png" style="width:100%" onclick="currentSlide(6)" alt="">
     </div>
   </div>
 </div>
