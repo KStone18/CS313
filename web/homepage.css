@@ -40,8 +40,8 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: absolute;
-  left: 500px;
-  top: 800px;
+  left: 250px;
+  top: 400px;
   height: 700px;
   width: 1000px;
 }
