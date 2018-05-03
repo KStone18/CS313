@@ -11,8 +11,8 @@
 <body>
 
 	<div class="top">
-	     <div class="page"> Home Page
-	     	  <a href="assignmentsPage.php" class="assign">Assignments</a>
+	     <div class="page">
+	     	  <a href="homePage.php" class="assign">Home</a>
 		     </div>
 
 		     </div>
