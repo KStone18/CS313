@@ -19,11 +19,11 @@
 
 
 	<!-- Container for the image gallery -->
-<div class="container">
+<div class="container" onload="currentSlide(1)">
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
-    <div class="numbertext" onload="currentSlide(1)">1 / 6</div>
+    <div class="numbertext" >1 / 6</div>
       <img src="pic1w.png" style="width:100%">
   </div>
 
