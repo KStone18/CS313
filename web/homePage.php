@@ -70,16 +70,16 @@
       <img class="demo cursor" src="pic2w.png" style="width:100%" onclick="currentSlide(2)" alt="Payette National Forest Fire Crew">
     </div>
     <div class="column">
-      <img class="demo cursor" src="pic3w.png" style="width:100%" onclick="currentSlide(3)" alt="">
+      <img class="demo cursor" src="pic3w.png" style="width:100%" onclick="currentSlide(3)" alt="Horseback Riding">
     </div>
     <div class="column">
-      <img class="demo cursor" src="pic4w.png" style="width:100%" onclick="currentSlide(4)" alt="">
+      <img class="demo cursor" src="pic4w.png" style="width:100%" onclick="currentSlide(4)" alt="Lower Palisades Lake">
     </div>
     <div class="column">
-      <img class="demo cursor" src="pic5w.png" style="width:100%" onclick="currentSlide(5)" alt="">
+      <img class="demo cursor" src="pic5w.png" style="width:100%" onclick="currentSlide(5)" alt="Mann Creek Fire Lookout">
     </div> 
     <div class="column">
-      <img class="demo cursor" src="pic6w.png" style="width:100%" onclick="currentSlide(6)" alt="">
+      <img class="demo cursor" src="pic6w.png" style="width:100%" onclick="currentSlide(6)" alt="Upper Palisades Lake">
     </div>
   </div>
 </div>
