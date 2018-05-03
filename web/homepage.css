@@ -23,8 +23,7 @@
 
 
 .body1 {
-	background: #f29b10;
-	background: radial-gradient(#d34413 10%, #f29b10 30%, #4697e2 10%);
+	background: #4697e2;
 	background-size: cover;
 	height: 100%;
 	background-repeat: no-repeat;
