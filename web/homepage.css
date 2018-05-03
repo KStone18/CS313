@@ -13,7 +13,10 @@
 }
 
 .date {
-	font-size: .5em;
+	position: absolute;
+	top: 1000px;
+	left: 10px;
+	font-size: .7em;
 }
 
 .page {
