@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html>
+<html class="body1">
 <head> 
 	<meta charset="utf-8" />
 	<title> Klenton's Home Page </title>
