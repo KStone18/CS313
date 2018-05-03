@@ -40,6 +40,8 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  height: 500px;
+  width: 600px;
 }
 
 /* Hide the images by default */
