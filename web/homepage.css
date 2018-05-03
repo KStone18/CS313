@@ -39,9 +39,9 @@
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: relative;
+  position: center;
   height: 700px;
-  width: 800px;
+  width: 1500px;
 }
 
 /* Hide the images by default */
