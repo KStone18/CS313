@@ -12,10 +12,10 @@
 
 	<div class="top">
 	     <div class="page">
-	     	  <a href="homePage.php" class="assign">Home</a>
-		     </div>
+	     	 <a href="homePage.php" class="assign">Home</a>
+		 </div>
 
-		     </div>
+	</div>
 		     
 </body>
 </html>	
