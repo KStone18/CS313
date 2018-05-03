@@ -12,6 +12,10 @@
 	font-size: .8em;
 }
 
+.date {
+	font-size: .5em;
+}
+
 .page {
 	width: 500px;
 	padding-left: 10px;

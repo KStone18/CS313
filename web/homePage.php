@@ -14,10 +14,6 @@
 		<div class="page"> Home Page
 		<a href="assignmentsPage.php" class="assign">Assignments</a>
 
-		<?php
-		echo "Today is " . date("Y/m/d") . "<br>";
-		?>
-
 		</div>
 	</div>
 	
@@ -88,7 +84,11 @@
     </div>
   </div>
 </div>
-
+	<div class="date">
+	 	<?php
+		echo "Today is " . date("Y/m/d") . "<br>";
+		?>
+	</div>
 <script>
   var slideIndex = 1;
   showSlides(slideIndex);
