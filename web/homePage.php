@@ -19,7 +19,7 @@
 
 
 	<!-- Container for the image gallery -->
-<div class="container" onload="currentSlide(1)">
+<div class="container">
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
@@ -84,7 +84,10 @@
   </div>
 </div>
 
-
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+</script>
 
 </body>
 </html>	
