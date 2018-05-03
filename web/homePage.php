@@ -13,6 +13,11 @@
 	<div class="top">
 		<div class="page"> Home Page
 		<a href="assignmentsPage.php" class="assign">Assignments</a>
+
+		<?php
+		echo "Today is " . date("Y/m/d") . "<br>";
+		?>
+
 		</div>
 	</div>
 	
