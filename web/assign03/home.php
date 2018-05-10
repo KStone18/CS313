@@ -9,17 +9,17 @@
       <ul>
         <li> 
           <div class="title">Item 1</div> 
-          <img src="car1.png" alt=""  height="190" class="image" />
+          <img src="car1.png" alt=""  height="195" class="image" />
           <button type="button" class="btn btn-primary btn-xs ">Add to Cart</button>
         </li>
         <li> 
           <div class="title">Item 2</div> 
-          <img src="car2.png" alt="" height="190" class="image" /> 
+          <img src="car2.png" alt="" height="195" class="image" /> 
           <button type="button" class="btn btn-primary btn-xs">Add to Cart</button>
         </li>
         <li> 
           <div class="title">Item 3</div> 
-          <img src="Boat.png" alt="" height="190" class="image" />
+          <img src="Boat.png" alt="" height="195" class="image" />
           <button type="button" class="btn btn-primary btn-xs">Add to Cart</button>
         </li>
         <li> 
