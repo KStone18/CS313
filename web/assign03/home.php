@@ -5,7 +5,22 @@
   <?php include('header.php'); ?>
 
   <div class="screen">
-    afaf
+    <div class="container">
+      <ul>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+        <li> <div class="title">Header</div> </li>
+      </ul>
+    </div>
   </div>
 
 </body>
