@@ -14,7 +14,9 @@
 	     <div class="page">
 	     	 <a href="homePage.php" class="assign">Home</a>
 		 </div>
-
+	</div>
+	<div class="assignments">
+	  <a href="assign03/home.php" class="assign">Shopping Cart</a>
 	</div>
 		     
 </body>
