@@ -30,15 +30,17 @@
 	background: red;
 	margin: 40px 0px 0px 50px;
 	box-sizing: border-box;
-	border: 2px solid white;
+	border: 2px solid black;
 }
 
 .container ul li:hover{
 	opacity: 0.9;
+
 }
 
 .container ul li .title:hover {
 	background: #302f2f;
+	border: 2px solid #302f2f;
 	color: white;
 	font-weight: bold;
 }
