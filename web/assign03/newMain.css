@@ -33,7 +33,7 @@
 	list-style: none;
 	float: left;
 	width: 20%;
-	height: 300px;
+	height: auto;
 	background: #302f2f;
 	margin: 40px 0px 0px 50px;
 	box-sizing: border-box;
