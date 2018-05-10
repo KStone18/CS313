@@ -38,8 +38,9 @@
 }
 
 .container ul li .title:hover {
-	background: blue;
+	background: lightgray;
 	color: white;
+	font-weight: bold;
 }
 
 .container ul li .title {
