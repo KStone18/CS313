@@ -1,6 +1,10 @@
+.buttonCSS {
+	padding-top: 30px;
+}
+
 .image {
 	width: 100%;
-	height: auto;
+	
 }
 .cartImg {
 	height: 15px;
