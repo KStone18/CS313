@@ -4,6 +4,10 @@
  <title> Something interesting <title>
   <?php include('header.php'); ?>
 
+  <div class="screen">
+    
+  </div>
+
 </body>
 </html>
 
