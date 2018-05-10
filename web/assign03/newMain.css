@@ -40,7 +40,7 @@
 
 .container ul li .title:hover {
 	background: #302f2f;
-	border: 2px solid #302f2f;
+	border: 2px solid darkgray;
 	color: white;
 	font-weight: bold;
 }
