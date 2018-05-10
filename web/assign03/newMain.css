@@ -1,5 +1,6 @@
 .image {
-	min-height: 100vh;
+	height: 100px;
+	width: 100px;
 }
 .cartImg {
 	height: 15px;
