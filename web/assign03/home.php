@@ -4,9 +4,9 @@
  <title> Something interesting </title>
   <?php include('header.php'); ?>
 
-  <!--<div class="screen">
+  <div class="screen">
     daf
-  </div>-->
+  </div>
 
 </body>
 </html>
