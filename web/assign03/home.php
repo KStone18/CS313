@@ -9,7 +9,7 @@
       <ul>
         <?php 
           $num = 9;
-          for($x = 1; $x != $num; $x++)
+          for($x = 1; $x < $num; $x++)
           {
             echo "<li> <div class=\"title\">Photo$x</div> </li>"
           }
