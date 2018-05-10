@@ -1,4 +1,7 @@
-
+.cartImg {
+	height: 10px;
+	width: 10px;
+}
 .screen {
 	min-height: 100vh;
 	background-color: #4f5e77;
