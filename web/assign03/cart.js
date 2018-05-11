@@ -1,31 +1,53 @@
 function addToCart() {
+	alert("in function");
+	var request;
 
-	document.getElementById('add1').onclick = function() {
-		alert("button was clicked")
-	}
+	$("#form1").submit(function(event) {
+		event.preventDefault();
 
-	document.getElementById('add2').onclick = function() {
-		alert("button was clicked")
-	}
+		if (request) {
+			request.abort();
+		}
 
-	document.getElementById('add4').onclick = function() {
-		alert("button was clicked")
-	}
+		var $form = $(this);
 
-	document.getElementById('add5').onclick = function() {
-		alert("button was clicked")
-	}
+		var $inputs = $form.find("input, select, button, textarea");
 
-	document.getElementById('add6').onclick = function() {
-		alert("button was clicked")
-	}
+		var serializedData = $form.serialize();
 
-	document.getElementById('add7').onclick = function() {
-		alert("button was clicked")
-	}
+		$inputs.prop("disabled", true);
 
-	document.getElementById('add8').onclick = function() {
-		alert("button was clicked")
-	}
+		request = $.ajax({
+			url: "addToCart.php",
+			type: "post",
+			data: serializedData
+		});
 
+		request.done(function (response, textStatus, jqXHR) {
+			console.log("Hooray, it worked!");
+		});
+
+		request.fail(function (jqXHR, textStatus, errorThrown) {
+			console.error(
+				"The following error occurred: " + textStatus, errorThrown
+				);
+		});
+
+		request.always(function() {
+			$inputs.prop("disabled", false);
+		});
+	});
+
+	// $(document).ready(function() {
+	// 	$("button").click(function() {
+	// 		$.post("addToCart.php", 
+	// 		{
+	// 			product: productName;
+	// 			price: productPrice;
+
+	// 		})
+	// 	})
+	// })
+	
 }
+
