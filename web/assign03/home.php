@@ -63,11 +63,7 @@ session_start();
       </ul>
     </div>
   </div>
-<div> 
-<input id="productQuantity" type="hidden" name="quantity" value="1"/>
- <input id="productId" type="hidden" name="product_id" value="91801160"/>
- <input id="productName" type="hidden" name="product_name" value="Red Hat"/>
-</div>
+
 <?php
   session_unset();
 
