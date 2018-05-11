@@ -2,51 +2,123 @@ function addToCart() {
 	//alert("in function");
 	document.getElementById('btn1').onclick = function() {
 		alert("button 1 was clicked");
-		id = "#form1";
+		var request;
+		$("#form1").submit(function(event) {
+			event.preventDefault();
+
+			if (request) {
+				request.abort();
+			}
+
+			var $form = $(this);
+
+			var $inputs = $form.find("input, select, button, textarea");
+
+			var serializedData = $form.serialize();
+
+			$inputs.prop("disabled", true);
+
+			request = $.ajax({
+				url: "addToCart.php",
+				type: "post",
+				data: serializedData
+			});
+
+			request.done(function (response, textStatus, jqXHR) {
+				console.log(serializedData);
+			});
+
+			request.fail(function (jqXHR, textStatus, errorThrown) {
+				console.error(
+					"The following error occurred: " + textStatus, errorThrown
+					);
+			});
+
+			request.always(function() {
+				$inputs.prop("disabled", false);
+			});
+		});
+		
 	};
 
 	document.getElementById('btn2').onclick = function() {
 		alert("button 2 was clicked");
-		id = "#form2";
+		var request;
+		$("#form2").submit(function(event) {
+			event.preventDefault();
+
+			if (request) {
+				request.abort();
+			}
+
+			var $form = $(this);
+
+			var $inputs = $form.find("input, select, button, textarea");
+
+			var serializedData = $form.serialize();
+
+			$inputs.prop("disabled", true);
+
+			request = $.ajax({
+				url: "addToCart.php",
+				type: "post",
+				data: serializedData
+			});
+
+			request.done(function (response, textStatus, jqXHR) {
+				console.log(serializedData);
+			});
+
+			request.fail(function (jqXHR, textStatus, errorThrown) {
+				console.error(
+					"The following error occurred: " + textStatus, errorThrown
+					);
+			});
+
+			request.always(function() {
+				$inputs.prop("disabled", false);
+			});
+		});
+	
 	};
 	
 
-	var request;
-	$(id).submit(function(event) {
-		event.preventDefault();
+	// var request;
+	// $(id).submit(function(event) {
+	// 	event.preventDefault();
 
-		if (request) {
-			request.abort();
-		}
+	// 	if (request) {
+	// 		request.abort();
+	// 	}
 
-		var $form = $(this);
+	// 	var $form = $(this);
 
-		var $inputs = $form.find("input, select, button, textarea");
+	// 	var $inputs = $form.find("input, select, button, textarea");
 
-		var serializedData = $form.serialize();
+	// 	var serializedData = $form.serialize();
 
-		$inputs.prop("disabled", true);
+	// 	$inputs.prop("disabled", true);
 
-		request = $.ajax({
-			url: "addToCart.php",
-			type: "post",
-			data: serializedData
-		});
+	// 	request = $.ajax({
+	// 		url: "addToCart.php",
+	// 		type: "post",
+	// 		data: serializedData
+	// 	});
 
-		request.done(function (response, textStatus, jqXHR) {
-			console.log(serializedData);
-		});
+	// 	request.done(function (response, textStatus, jqXHR) {
+	// 		console.log(serializedData);
+	// 	});
 
-		request.fail(function (jqXHR, textStatus, errorThrown) {
-			console.error(
-				"The following error occurred: " + textStatus, errorThrown
-				);
-		});
+	// 	request.fail(function (jqXHR, textStatus, errorThrown) {
+	// 		console.error(
+	// 			"The following error occurred: " + textStatus, errorThrown
+	// 			);
+	// 	});
 
-		request.always(function() {
-			$inputs.prop("disabled", false);
-		});
-	});
+	// 	request.always(function() {
+	// 		$inputs.prop("disabled", false);
+	// 	});
+	// });
 
 	// $(document).ready(function() {
 	// 	$("button").click(function() {
