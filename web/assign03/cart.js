@@ -24,7 +24,7 @@ function addToCart() {
 		});
 
 		request.done(function (response, textStatus, jqXHR) {
-			console.log("Hooray, it worked!");
+			console.log(serializedData);
 		});
 
 		request.fail(function (jqXHR, textStatus, errorThrown) {
