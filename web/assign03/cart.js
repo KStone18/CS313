@@ -1,5 +1,5 @@
 function addToCart() {
-	//alert("in function");
+	alert("in function");
 	document.getElementById('btn1').onclick = function() {
 		alert("button 1 was clicked");
 		var request;
