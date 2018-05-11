@@ -1,6 +1,6 @@
 function addToCart() {
 	alert("in function");
-	document.getElementById('btn1').onclick = function() {
+	//document.getElementById('btn1').onclick = function() {
 		alert("button 1 was clicked");
 		var request;
 		$("#form1").submit(function(event) {
@@ -39,7 +39,7 @@ function addToCart() {
 			});
 		});
 		
-	};
+	//};
 
 	/*document.getElementById('btn2').onclick = function() {
 		alert("button 2 was clicked");
