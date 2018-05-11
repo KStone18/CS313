@@ -41,7 +41,7 @@ function addToCart() {
 		
 	};
 
-	document.getElementById('btn2').onclick = function() {
+	/*document.getElementById('btn2').onclick = function() {
 		alert("button 2 was clicked");
 		var request;
 		$("#form2").submit(function(event) {
@@ -80,7 +80,7 @@ function addToCart() {
 			});
 		});
 	
-	};
+	};*/
 	
 
 	// var request;
