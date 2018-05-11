@@ -51,7 +51,7 @@
     </div>
   </div>
 
- <div>
+ <div style="height: 300px">
   <input id="productQuantity" type="hidden" name="quantity" value="1"/>
  <input id="productId" type="hidden" name="product_id" value="91801160"/>
  <input id="productName" type="hidden" name="product_name" value="Red Hat"/>
