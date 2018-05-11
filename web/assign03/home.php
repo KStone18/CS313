@@ -1,7 +1,3 @@
-<?php
-<!-- Start the session -->
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +10,7 @@ session_start();
         <li> 
           <div class="title">Item 1</div> 
           <img src="car1.png" alt=""  height="207" class="image" />
-
-          <button type="button" class="btn btn-primary btn-xs buttonCSS" 
-                  >Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
         </li>
         <li> 
           <div class="title">Item 2</div> 
@@ -56,12 +50,6 @@ session_start();
       </ul>
     </div>
   </div>
-
-<?php
-  session_unset();
-
-  session_destroy();
-?>
 
 </body>
 </html>
