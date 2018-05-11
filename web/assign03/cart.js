@@ -1,16 +1,16 @@
-function addToCart() {
+function addToCart(name, price) {
 	alert("in cart func");
+	var name = name;
+	var price = price;
 
-	// $(document).ready(function() {
-	// 	$("button").click(function() {
-	// 		$.post("addToCart.php", 
-	// 		{
-	// 			product: productName;
-	// 			price: productPrice;
-
-	// 		})
-	// 	})
-	// })
+	$.ajax({
+		type: "POST",
+		url: "addToCart.php",
+		data: { name: name, price: price },
+		success: function(data) {
+			console.log(data);
+		}
+	})
 	
 }
 
