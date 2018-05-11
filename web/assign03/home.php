@@ -12,7 +12,6 @@
           <img src="car1.png" alt=""  height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
             <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
@@ -23,8 +22,7 @@
           <img src="car2.png" alt="" height="207" class="image" /> 
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
+            <input id="productName" type="hidden" name="product_name" value="White R/C Truck"/>
             <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
           </form>
@@ -34,9 +32,8 @@
           <img src="Boat.png" alt="" height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
-            <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
+            <input id="productName" type="hidden" name="product_name" value="R/C Boat"/>
+            <input id="productPrice" type="hidden" name="product_price" value="120.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS">Add to Cart</button>
         </li>
         <li> 
@@ -44,9 +41,8 @@
           <img src="Jet.png" alt="" height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
-            <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
+            <input id="productName" type="hidden" name="product_name" value="R/C Plane"/>
+            <input id="productPrice" type="hidden" name="product_price" value="400.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS">Add to Cart</button>
           </form>
         </li>
@@ -55,9 +51,8 @@
           <img src="excavator.png" alt="" height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
-            <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
+            <input id="productName" type="hidden" name="product_name" value="R/C Excavator"/>
+            <input id="productPrice" type="hidden" name="product_price" value="150.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS">Add to Cart</button>
           </form>
         </li>
@@ -66,9 +61,8 @@
           <img src="Quadcopter.png" alt="" height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
-            <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
+            <input id="productName" type="hidden" name="product_name" value="R/C Drone"/>
+            <input id="productPrice" type="hidden" name="product_price" value="900.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
           </form>
         </li>
@@ -77,9 +71,8 @@
           <img src="tank.png" alt="" height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
-            <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
+            <input id="productName" type="hidden" name="product_name" value="R/C Tank"/>
+            <input id="productPrice" type="hidden" name="product_price" value="160.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
           </form>
         </li>
@@ -88,9 +81,8 @@
           <img src="sub.png" alt="" height="207" class="image" />
           <form name="Item1" action="cart.php" method="POST" id="form1">
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
-            <input id="productId" type="hidden" name="product_id" value="1"/>
-            <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
-            <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
+            <input id="productName" type="hidden" name="product_name" value="R/C Submarine"/>
+            <input id="productPrice" type="hidden" name="product_price" value="400.00"/>
             <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
           </form>
         </li>
