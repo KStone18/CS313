@@ -1,8 +1,16 @@
 function addToCart() {
-	alert("in function");
-	var request;
+	//alert("in function");
+	document.getElementById('btn1').onclick = function() {
+		alert("button 1 was clicked")
+	};
 
-	$("#form1").submit(function(event) {
+	document.getElementById('btn2').onclick = function() {
+		alert("button 2 was clicked")
+	};
+	
+
+	var request;
+	$(id).submit(function(event) {
 		event.preventDefault();
 
 		if (request) {
