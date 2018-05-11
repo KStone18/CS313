@@ -10,7 +10,7 @@ function addToCart() {
 	
 
 	var request;
-	$(id).submit(function(event) {
+	$("#form1").submit(function(event) {
 		event.preventDefault();
 
 		if (request) {
