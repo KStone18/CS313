@@ -14,7 +14,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Truck"/>
             <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
         <li> 
@@ -24,7 +24,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="White R/C Truck"/>
             <input id="productPrice" type="hidden" name="product_price" value="200.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
         <li> 
@@ -34,7 +34,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Boat"/>
             <input id="productPrice" type="hidden" name="product_price" value="120.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS">Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
         </li>
         <li> 
           <div class="title">Item 4</div> 
@@ -43,7 +43,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Plane"/>
             <input id="productPrice" type="hidden" name="product_price" value="400.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS">Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
         <li> 
@@ -53,7 +53,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Excavator"/>
             <input id="productPrice" type="hidden" name="product_price" value="150.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS">Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
         <li> 
@@ -63,7 +63,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Drone"/>
             <input id="productPrice" type="hidden" name="product_price" value="900.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
         <li> 
@@ -73,7 +73,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Tank"/>
             <input id="productPrice" type="hidden" name="product_price" value="160.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
         <li> 
@@ -83,7 +83,7 @@
             <input id="productQuantity" type="hidden" name="quantity" value="1"/>
             <input id="productName" type="hidden" name="product_name" value="R/C Submarine"/>
             <input id="productPrice" type="hidden" name="product_price" value="400.00"/>
-            <button type="button" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</button>
+            <input type="submit" class="btn btn-primary btn-xs buttonCSS" >Add to Cart</>
           </form>
         </li>
       </ul>
