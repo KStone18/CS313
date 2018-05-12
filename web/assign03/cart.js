@@ -40,4 +40,6 @@ function redirect() {
     	$("#myBtn").click(function() {
        		window.location.assign('checkout.php');
     	});
+
+    });
 }
