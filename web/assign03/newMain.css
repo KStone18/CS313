@@ -10,7 +10,8 @@
 
 .shopCart {
 	position: absolute;
-	top: 100px;
+	top: 500px;
+	right: 500px;
 	width: 400px;
 	height: auto;
 	border: 3px solid white;
