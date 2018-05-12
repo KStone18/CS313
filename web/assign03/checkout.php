@@ -24,22 +24,17 @@
      </div> 
 
 
-    <form onsubmit="return validateMyForm()" action="confirm.php" method="post">
+    <form  action="<?php htmlspecialchars($_SERVER["confirm.php"]);?>" method="post">
 
       <div class="form-group"> 
         <label for="full_name_id" class="control-label">Full Name</label>
-        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+        <input type="text" class="form-control" id="full" name="full_name" placeholder="John Deer">
       </div>  
 
       <div class="form-group"> 
-        <label for="street1_id" class="control-label">Street Address 1</label>
+        <label for="street1_id" class="control-label">Street Address</label>
         <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
-      </div>          
-              
-      <div class="form-group"> 
-        <label for="street2_id" class="control-label">Street Address 2</label>
-        <input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
-      </div>  
+      </div>           
 
       <div class="form-group"> 
         <label for="city_id" class="control-label">City</label>
