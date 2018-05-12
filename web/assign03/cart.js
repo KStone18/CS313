@@ -9,7 +9,7 @@ function addToCart(name, price, id) {
 		url: "addToCart.php",
 		data: { id: id, name: name, price: price },
 		success: function(data) {
-			document.getElementById('cart').innerHTML = data; //console.log(data);
+			document.getElementById('cart').innerHTML = data //console.log(data);
 		}
 	})
 	
@@ -22,8 +22,9 @@ function removeFromCart(id) {
 		url: "removeFrom.php",
 		data: { id: id},
 		success: function(data) {
-			console.log(data);
-			//document.getElementById('cart').innerHTML = data; 
+			//console.log(data);
+			document.getElementById('cart').innerHTML = data
+			location.reload()
 		}
 	})
 }
