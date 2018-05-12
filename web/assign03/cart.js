@@ -28,6 +28,13 @@ function removeFromCart(id) {
 	})
 }
 
+$(document).ready(function() {
+    $("#myBtn").click(function() {
+        window.location.assign('checkout.php');
+    });
+
+});
+
 function redirect() {
 	var btn = document.getElementById('myBtn');
 
