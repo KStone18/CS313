@@ -9,20 +9,19 @@
   ?>
   <div class="screen">
   	<div  class="shopCart">
-      <table>
+     
 	       <?php
 
         foreach ($_SESSION['cart'] as $id) {
-         echo "<tr>";
-         echo "<td><button onclick=\"removeFromCart('".$id."')\">Delete</button></td>";
-         echo "<td>".$idAssoc[$id]['name']."</td>";
-         echo "<td>\$".$idAssoc[$id]['price']."</td>";
-         echo "</tr>";
+         echo "<div>";
+         echo "<button onclick=\"removeFromCart('".$id."')\">Delete</button> " . " ";
+         echo . $idAssoc[$id]['name'] . " \$ " . $idAssoc[$id]['price'];
+         echo "</div>";
         }
         //$totalPrice += $services[$id]["price"];
         ?>
 	  
-    </table> 
+    
 	 </div>
   </div>
 </body>
