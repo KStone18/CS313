@@ -1,12 +1,16 @@
 <?php
 	session_start();
 
-	if(empty($_SESSION['cart'])) {
-		$_SESSION['cart'] = array();
+	if(isset($_SESSION['cart'])) {
+		$key = array_search($_POST['id'], $_SESSION['id']);
+		if ($key !== false)
+		{
+			unset($_SESSION['cart'][$key]);
+		}
+
+		$_SESSION['cart'] = array_values($_SESSION['cart']);
 	}
-	 
-	array_push($_SESSION['cart'], $_POST['id']);
-	
+		
 	$numItems = sizeof($_SESSION['cart']);
 	echo $numItems; 
 ?>
