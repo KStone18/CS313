@@ -10,9 +10,10 @@
   include('assocArray.php');
   ?>
   <div class="screen"> 
+  	
 
 	<?php
-  	//wrap in html tags 
+  		//wrap in html tags 
     	foreach ($_SESSION['cart'] as $itemNumber => $value) {
 	 		echo "Id=" . $itemNumber . ", Value=" . $value;
 	 		echo "<br>";
@@ -20,7 +21,7 @@
 		}
 	?>  
 
-
+	
   </div>
 </body>
 </html>
