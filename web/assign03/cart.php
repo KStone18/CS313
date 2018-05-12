@@ -18,6 +18,8 @@
 
         }
         
+
+        echo "<button class=\"btn btn-primary btn-sm buttonCSS\" onclick=\"checkout.php\">Checkout</button> 
         ?>
 	  
    
