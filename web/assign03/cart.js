@@ -36,9 +36,8 @@ $(document).ready(function() {
 });
 
 function redirect() {
-	var btn = document.getElementById('myBtn');
-
-	btn.addEventListener('click', function() {
-  	document.location.href = 'checkout.php';
-	});
+	$(document).ready(function() {
+    	$("#myBtn").click(function() {
+       		window.location.assign('checkout.php');
+    	});
 }
