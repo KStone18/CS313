@@ -11,9 +11,11 @@
   	<div  class="shopCart">
       <table>
 	       <?php
-         echo "<button onclick=\"removeFromCart('".$id."')\">Delete</button> ";
-         echo . $idAssoc[$id]['name'] . "Hello! ";
 
+         foreach ($_SESSION['cart'] as $id) {
+          echo "<button class=\"btn btn-primary btn-sm buttonCSS\" onclick=\"removeFromCart('".$id."')\">Delete</button> ";
+          echo " " . $idAssoc[$id]['name'] . "23"
+        }
         
         ?>
 	  
