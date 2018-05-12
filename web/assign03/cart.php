@@ -16,7 +16,7 @@
          echo "<tr>";
          echo "<td><button onclick=\"removeFromCart('".$id."')\">Delete</button></td>";
          echo "<td>".$idAssoc[$id]['name']."</td>";
-         echo "<td><pre> </pre>\$".$idAssoc[$id]['price']."</td>";
+         echo "<td>\$".$idAssoc[$id]['price']."</td>";
          echo "</tr>";
         }
         //$totalPrice += $services[$id]["price"];
