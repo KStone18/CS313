@@ -12,11 +12,11 @@
 
 	$count=0;
 
-	foreach ($_SESSION['cart']['id'] as $itemNumber => $value) {
-	 	echo "Id=" . $itemNumber . ", Value=" . $value;
-	 	echo "<br>";
-	 	$count++;
-	 }
+	// foreach ($_SESSION['cart']['id'] as $itemNumber => $value) {
+	//  	echo "Id=" . $itemNumber . ", Value=" . $value;
+	//  	echo "<br>";
+	//  	$count++;
+	//  }
 
 
 
