@@ -13,8 +13,8 @@
 	       <?php
 
          foreach ($_SESSION['cart'] as $id) {
-          echo "<button class=\"btn btn-primary btn-lg buttonCSS\" onclick=\"removeFromCart('".$id."')\">Delete</button> ";
-          echo $idAssoc[$id]['name'] . " " . $idAssoc[$id]['price']  . "<br>";
+          echo "<button class=\"btn btn-primary btn-sm buttonCSS\" onclick=\"removeFromCart('".$id."')\">Remove From Cart</button> ";
+          echo "<p style=\"color: white;\">"$idAssoc[$id]['name'] . " " . $idAssoc[$id]['price']  . "</p><br>";
 
         }
         
