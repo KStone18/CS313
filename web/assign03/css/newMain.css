@@ -9,9 +9,17 @@
 
 }
 .text {
-	font-size: 1.3em;
+	font-size: 1.0em;
 	color: white;
+	font-family: Arial;
 }
+
+.textTotal { 
+	font-size: 1.2em;
+	color: black;
+	font-family: Arial;
+}
+
 .shopCart {
 	/* position: relative; */
 	/* top: 300px; */
