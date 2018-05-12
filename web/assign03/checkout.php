@@ -9,7 +9,7 @@
   ?>
   <div class="screen">
   	<div  class="shopCart">
-      <!-- <form onsubmit="return validateMyForm()" action="confirm.php" method="post"> -->
+      
          <?php
          $totalPrice = 0;
          foreach ($_SESSION['cart'] as $id) {
