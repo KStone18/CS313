@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-inverse strip">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -16,7 +17,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="cart.php">
-          <span class="glyphicon glyphicon-shopping-cart" id="cart"></span>
+          <span class="glyphicon glyphicon-shopping-cart" id="cart"><?php 
+          $numItems = sizeof($_SESSION['cart']);
+          echo $numItems; 
+          ?></span>
 
         </a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
