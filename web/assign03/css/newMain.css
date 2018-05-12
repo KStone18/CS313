@@ -17,6 +17,12 @@
 	font-family: Arial;
 }
 
+.textPrice {
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+}
+
 .textTotal { 
 	padding-left: 5px;
 	font-size: 1.4em;
