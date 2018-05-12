@@ -10,7 +10,7 @@
   include('assocArray.php');
   ?>
   <div class="screen"> 
-  	
+  	<div align="center" class="shopCart">
 
 	<?php
   		//wrap in html tags 
@@ -21,7 +21,7 @@
 		}
 	?>  
 
-	
+	</div>
   </div>
 </body>
 </html>
