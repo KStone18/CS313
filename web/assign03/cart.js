@@ -22,7 +22,8 @@ function removeFromCart(id) {
 		url: "removeFrom.php",
 		data: { id: id},
 		success: function(data) {
-			document.getElementById('cart').innerHTML = data; 
+			console.log(data);
+			//document.getElementById('cart').innerHTML = data; 
 		}
 	})
 }
