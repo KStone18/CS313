@@ -20,7 +20,7 @@ function removeFromCart(id) {
 
 	$.ajax ({
 		type: "POST", 
-		url: "removeFromCart.php",
+		url: "removeFrom.php",
 		data: { id: id},
 		success: function(data) {
 			document.getElementById('cart').innerHTML = data; 
