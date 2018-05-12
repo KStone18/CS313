@@ -3,7 +3,7 @@
 <head>
  <title> Gizmos R/C </title>
   <?php include('header.php'); ?>
-  <div class="pTitle">Welcome to Gizmos R/C </div>
+  <div class="pTitle">/div>
   <div class="screen">
     <div class="container">
       <ul>
