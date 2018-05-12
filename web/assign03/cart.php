@@ -9,7 +9,7 @@
   ?>
   <div class="screen">
   	<div  class="shopCart">
-      <table>
+      
 	       <?php
 
          foreach ($_SESSION['cart'] as $id) {
@@ -20,7 +20,7 @@
         
         ?>
 	  
-    </table> 
+   
 	 </div>
   </div>
 </body>
