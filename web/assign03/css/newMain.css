@@ -15,9 +15,10 @@
 }
 
 .textTotal { 
-	font-size: 1.2em;
-	color: black;
+	font-size: 1.4em;
+	color: white;
 	font-family: Arial;
+	font-weight: bold;
 }
 
 .shopCart {
