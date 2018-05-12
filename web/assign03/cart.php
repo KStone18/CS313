@@ -11,13 +11,6 @@
   	<div  class="shopCart">
       <table>
 	       <?php
-  // 		//wrap in html tags
-  //   	foreach ($_SESSION['cart'] as $id) {
-	 // 		echo "Id=" . $id . ", Value=" . $idAssoc[$id]["name"] . $idAssoc[$id]["price"];
-	 // 		echo "<br>";
-
-		// }
-         echo "does this work?";
 
         foreach ($_SESSION['cart'] as $id) {
          echo "<tr>";
