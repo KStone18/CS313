@@ -12,7 +12,7 @@
       <table>
 	       <?php
          echo "<button onclick=\"removeFromCart('".$id."')\">Delete</button> ";
-         echo $idAssoc[$id]['name'] . "Hello! ";
+         echo . $idAssoc[$id]['name'] . "Hello! ";
 
         
         ?>
