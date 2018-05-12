@@ -11,7 +11,9 @@
   	<div  class="shopCart">
       <table>
 	       <?php
-         echo "<button onclick=\"removeFromCart('".$id."')\">Delete</button>"
+         echo "<button onclick=\"removeFromCart('".$id."')\">Delete</button> ";
+         echo $idAssoc[$id]['name'] . "Hello! ";
+
         
         ?>
 	  
