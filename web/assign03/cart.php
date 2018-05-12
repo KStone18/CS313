@@ -9,17 +9,18 @@
   include('header.php'); 
   include('assocArray.php');
   ?>
+  <div class="screen"> 
 
-
-
-  	<!--  <?php
+	<?php
   	//wrap in html tags 
-  	// foreach ($_SESSION['cart'] as $itemNumber => $value) {
-	 	// echo "Id=" . $itemNumber . ", Value=" . $value;
-	 	// echo "<br>";
+    	foreach ($_SESSION['cart'] as $itemNumber => $value) {
+	 		echo "Id=" . $itemNumber . ", Value=" . $value;
+	 		echo "<br>";
 	 	
-	// }
-	?>   -->
+		}
+	?>  
 
+
+  </div>
 </body>
 </html>

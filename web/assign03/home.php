@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title> Something interesting </title>
+ <title> Gizmos R/C </title>
   <?php include('header.php'); ?>
   <div class="pTitle"> </div>
   <div class="screen">
