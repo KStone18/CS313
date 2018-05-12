@@ -8,7 +8,7 @@
 
 	 array_push($_SESSION['cart'], $_POST['id']);
 
-	// var_dump($_SESSION['cart']);
+	 var_dump($_SESSION['cart']);
 
 
 
