@@ -4,10 +4,11 @@
 }
 
 td{
-    border: 1px solid black;
-    font-size: .85em;
-    padding: 5px;
-    color: blue;
+    
+    font-size: 1em;
+    padding: 10pxpx;
+    color: Black;
+    font-weight: bold;
 
 }
 
@@ -23,7 +24,7 @@ td{
 	margin: auto;
 	width: 300px;
 	height: auto;
-	border: 3px solid white;
+
 }
 
 .cartImg {
