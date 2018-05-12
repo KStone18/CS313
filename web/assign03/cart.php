@@ -7,7 +7,7 @@
  <title> Shopping Cart </title>
   <?php 
   include('header.php'); 
-  include('assocArray.php');
+  
   ?>
 
 
