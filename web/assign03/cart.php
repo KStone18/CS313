@@ -17,9 +17,9 @@
 	 // 		echo "<br>";
 
 		// }
-         echo "does this work?"
+         echo "does this work?";
 
-         foreach ($_SESSION['cart'] as $id) {
+        foreach ($_SESSION['cart'] as $id) {
           // echo "<tr>";
           // echo "<td><button onclick=\"removeFromCart(".$id.")\">Delete</button></td>";
         //  echo "<td class="">".$idAssoc[$id]['name']."</td>";
