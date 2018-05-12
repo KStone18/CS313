@@ -15,7 +15,7 @@
         foreach ($_SESSION['cart'] as $id) {
          echo "<tr>";
          echo "<td><button onclick=\"removeFromCart('".$id."')\">Delete</button></td>";
-         echo "<td class=".">".$idAssoc[$id]['name']. " " ."</td>";
+         echo "<td class=".">".$idAssoc[$id]['name'] ."</td>";
          echo "<td>\$".$idAssoc[$id]['price']."</td>";
          echo "</tr>";
         }

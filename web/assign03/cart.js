@@ -16,7 +16,6 @@ function addToCart(name, price, id) {
 }
 
 function removeFromCart(id) {
-	alert(id);
 	$.ajax ({
 		type: "POST", 
 		url: "removeFrom.php",
