@@ -8,7 +8,10 @@
 	width: 100%;
 
 }
-
+.text {
+	font-size: 1.3em;
+	color: red;
+}
 .shopCart {
 	/* position: relative; */
 	/* top: 300px; */
@@ -16,7 +19,7 @@
 	margin: auto;
 	width: 300px;
 	height: auto;
-	font-size: 1.3em;
+
 
 }
 
