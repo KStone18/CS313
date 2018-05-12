@@ -9,7 +9,7 @@
   ?>
   <div class="screen">
   	<div  class="shopCart">
-      <table>
+      <table cellpadding="10px">
 	       <?php
 
         foreach ($_SESSION['cart'] as $id) {
