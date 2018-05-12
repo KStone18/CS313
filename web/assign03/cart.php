@@ -15,7 +15,7 @@
 	<?php
   		//wrap in html tags 
     	foreach ($_SESSION['cart'] as $itemNumber => $value) {
-	 		echo "Id=" . $itemNumber . ", Value=" . $value;
+	 		echo "Id=" . $itemNumber . ", Value=" . $idAssoc[$value];
 	 		echo "<br>";
 	 	
 		}
