@@ -3,6 +3,14 @@
 	margin-top: 10px;
 }
 
+td{
+    border: 1px solid black;
+    font-size: .85em;
+    padding: 5px;
+    color: blue;
+
+}
+
 .image {
 	width: 100%;
 
