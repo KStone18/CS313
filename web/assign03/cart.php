@@ -23,7 +23,7 @@
 
         ?>
 	     <div class="checkoutBtn">
-        <button id="myBtn" class="btn btn-primary btn-sm buttonCSS" onclick="redirect()">Checkout</button>
+        <input type="button" id="myBtn" class="btn btn-primary btn-sm buttonCSS" onclick="location.href='checkout.php';" value="Checkout"/>
        <?php echo "<span class=\"textTotal\"> Total: \$$totalPrice.00</span><br>"; ?>
       </div>
 	 </div>
