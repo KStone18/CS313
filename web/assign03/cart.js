@@ -30,8 +30,8 @@ function removeFromCart(id) {
 
 function redirect() {
 	var btn = document.getElementById('myBtn');
-	
+
 	btn.addEventListener('click', function() {
-  	document.location.href = 'some/page';
+  	document.location.href = 'checkout.php';
 	});
 }
