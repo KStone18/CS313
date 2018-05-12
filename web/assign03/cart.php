@@ -14,7 +14,7 @@
 
          foreach ($_SESSION['cart'] as $id) {
           echo "<button class=\"btn btn-primary btn-sm buttonCSS\" onclick=\"removeFromCart('".$id."')\">Remove From Cart</button> ";
-          echo "<p>{$idAssoc[$id]['name']} : {$idAssoc[$id]['price']}</p><br>";
+          echo "<span>{$idAssoc[$id]['name']} : {$idAssoc[$id]['price']}</span><br>";
 
         }
         
