@@ -15,3 +15,16 @@ function addToCart(name, price, id) {
 	
 }
 
+function removeFromCart(id) {
+	var id = id;
+
+	$.ajax ({
+		type: "POST", 
+		url: "removeFromCart.php",
+		data: { id: id},
+		success: function(data) {
+			document.getElementById('cart').innerHTML = data; 
+		}
+	})
+}
+

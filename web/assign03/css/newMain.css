@@ -5,13 +5,14 @@
 
 .image {
 	width: 100%;
-	
+
 }
 
 .shopCart {
-	position: relative;
-	top: 300px;
-	right: 500px;
+	/* position: relative; */
+	/* top: 300px; */
+	/* right: 500px; */
+	margin: auto;
 	width: 300px;
 	height: auto;
 	border: 3px solid white;
@@ -24,6 +25,7 @@
 .screen {
 	min-height: 100vh;
 	background-color: #4f5e77;
+	padding-top: 100px;
 }
 
 .strip {
