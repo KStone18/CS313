@@ -24,7 +24,7 @@
      </div> 
 
 
-    <form  action="<?php htmlspecialchars($_SERVER["confirm.php"]);?>" method="post">
+    <form  action="<?php htmlspecialchars($_SERVER['confirm.php']);?>" method="post">
 
       <div class="form-group"> 
         <label for="full_name_id" class="control-label">Full Name</label>
