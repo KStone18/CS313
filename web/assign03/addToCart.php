@@ -6,7 +6,7 @@
 	}
 	 
 	array_push($_SESSION['cart'], $_POST['id']);
-	$count++;
 	
-	echo $count; 
+	$numItems = count($_SESSION);
+	echo $numItems; 
 ?>
