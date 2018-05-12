@@ -9,7 +9,7 @@
 }
 
 .shopCart {
-	position: absolute;
+	position: relative;
 	top: 500px;
 	right: 500px;
 	width: 300px;
