@@ -5,7 +5,7 @@
 		$_SESSION['cart'] = array();
 	}
 
-	// array_push($_SESSION['cart'], $_POST['id'])
+	 array_push($_SESSION['cart'], $_POST['id'])
 
 	// var_dump($_SESSION['cart']);
 
