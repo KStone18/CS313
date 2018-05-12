@@ -21,7 +21,7 @@
 
 
         ?>
-	     <button id="myBtn" class="btn btn-primary btn-sm buttonCSS" onclick="redirect()">Checkout</button
+	     <button id="myBtn" class="btn btn-primary btn-sm buttonCSS" onclick="redirect()">Checkout</button>
    
 	 </div>
   </div>
