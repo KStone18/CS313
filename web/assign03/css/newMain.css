@@ -4,11 +4,11 @@
 }
 
 td{
-    
+    border: 1px solid black;
     font-size: 1em;
-    padding: 10pxpx;
+    padding: 10px;
     color: Black;
-    font-weight: bold;
+    font-family: Ariel;
 
 }
 
