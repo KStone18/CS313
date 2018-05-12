@@ -9,7 +9,7 @@
   ?>
   <div class="screen">
   	<div  class="shopCart">
-      
+
          <?php
          $totalPrice = 0;
          foreach ($_SESSION['cart'] as $id) {
@@ -20,7 +20,7 @@
 
 
      <div class="checkoutBtn">
-       <?php echo "<span class=\"textTotal\"> Total: \$$totalPrice.00</span><br>"; ?>
+       <?php echo "<span class=\"textTotal\">Total: \$$totalPrice.00</span><br>"; ?>
      </div> 
 
   
