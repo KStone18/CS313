@@ -1,5 +1,5 @@
 function addToCart(name, price, id) {
-	alert("in cart func");
+	//alert("in cart func");
 	var name = name;
 	var price = price;
 	var id = id;
