@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	echo "here";
 
 	if(isset($_SESSION['cart'])) {
 		$key = array_search($_POST['id'], $_SESSION['id']);
