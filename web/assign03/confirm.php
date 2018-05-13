@@ -26,10 +26,11 @@
         ?>
 
         <div class="checkoutBtn">
+          <h2>Shipping Address</h2>
        <?php 
-        echo "<span class=\"text\"> $name </span><br>";
-        echo "<span class=\"text\"> $street</span><br>";
-        echo "<span class=\"text\"> $city $state $zip</span><br>";
+        echo "<span class=\"textAdd\"> $name </span><br>";
+        echo "<span class=\"textAdd\"> $street</span><br>";
+        echo "<span class=\"textAdd\"> $city $state $zip</span><br>";
         
 
        ?>
