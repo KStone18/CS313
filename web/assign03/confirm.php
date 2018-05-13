@@ -17,6 +17,9 @@
           $totalPrice += $idAssoc[$id]["price"];
 
         }
+
+        
+        
         ?>
 
 

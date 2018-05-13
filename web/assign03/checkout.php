@@ -23,30 +23,9 @@
        <?php echo "<span class=\"textTotal\">Total: \$$totalPrice.00</span><br>"; ?>
      </div> 
 
-     <?php
-     $name = $street = $city = $state = $zip = "";
+     
 
-     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      
-      $name = test_input($_POST["full_name"]);
-      $street = test_input($_POST["street"]);
-      $city = test_input($_POST["city"]);
-      $state = test_input($_POST["state"]);
-      $zip = test_input($_POST["zip"]);
-     }
-
-     function test_input($data) {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-      echo $data;
-      return $data;
-
-     }
-
-     ?>
-
-    <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+    <form  action="confirm.php" method="post">
 
       <div class="form-group"> 
         <label for="full_name_id" class="control-label">Full Name</label>
