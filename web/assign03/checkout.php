@@ -27,7 +27,7 @@
      $name = $street = $city = $state = $zip = "";
 
      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      echo "made it";
+      
       $name = test_input($_POST["full_name"]);
       $street = test_input($_POST["street"]);
       $city = test_input($_POST["city"]);
@@ -39,7 +39,7 @@
       $data = trim($data);
       $data = stripslashes($data);
       $data = htmlspecialchars($data);
-      console.log($data);
+      echo $data;
       return $data;
 
      }
