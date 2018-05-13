@@ -27,11 +27,11 @@
      $name = $street = $city = $state = $zip = "";
 
      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $name = test_input($_POST["full_name"])
-      $street = test_input($_POST["street"])
-      $city = test_input($_POST["city"])
-      $state = test_input($_POST["state"])
-      $zip = test_input($_POST["zip"])
+      $name = test_input($_POST["full_name"]);
+      $street = test_input($_POST["street"]);
+      $city = test_input($_POST["city"]);
+      $state = test_input($_POST["state"]);
+      $zip = test_input($_POST["zip"]);
      }
 
      function test_input($data) {
