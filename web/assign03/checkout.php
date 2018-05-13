@@ -39,7 +39,7 @@
       $data = trim($data);
       $data = stripslashes($data);
       $data = htmlspecialchars($data);
-      console.log(data);
+      console.log($data);
       return $data;
 
      }
