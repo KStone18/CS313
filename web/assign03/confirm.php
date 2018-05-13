@@ -17,7 +17,8 @@
           $totalPrice += $idAssoc[$id]["price"];
 
         }
-
+        var_dump($_POST)
+        //$name = htmlspecialchars($_POST[""])
 
 
         ?>
