@@ -23,8 +23,6 @@
        <?php echo "<span class=\"textTotal\">Total: \$$totalPrice.00</span><br>"; ?>
      </div> 
 
-     
-
     <form  action="confirm.php" method="post">
 
       <div class="form-group"> 
