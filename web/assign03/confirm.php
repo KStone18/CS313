@@ -13,7 +13,7 @@
          <?php
          $totalPrice = 0;
          foreach ($_SESSION['cart'] as $id) {
-          echo "<span class=\"text\">{$idAssoc[$id]['name']}     <span class=\"textPrice\">\${$idAssoc[$id]['price']}.00</span></span><br>";
+          echo "<span class=\"textConf\">{$idAssoc[$id]['name']}     <span class=\"textPrice\">\${$idAssoc[$id]['price']}.00</span></span><br>";
           $totalPrice += $idAssoc[$id]["price"];
 
         }
