@@ -34,7 +34,6 @@
           <img src="images/Jet.png" alt="" height="207" class="image" />
           <button id="btn4" class="btn btn-primary btn-xs buttonCSS"
                   name="button4" onclick="addToCart('R/C Plane', 400.00, 4)">Add To Cart</button>
-
         </li>
         <li>
           <div class="title">R/C Excavator $150.00</div>
