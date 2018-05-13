@@ -9,7 +9,7 @@
   ?>
   <div class="screen">
     <div  class="confirm">
-      <h3>Confirmation Page</h3>
+      <h1>Confirmation Page</h1>
          <?php
          $totalPrice = 0;
          foreach ($_SESSION['cart'] as $id) {
@@ -26,7 +26,7 @@
         ?>
 
         <div class="checkoutAdd">
-          <h2>Shipping Address</h2>
+          <h3>Shipping Address</h3>
        <?php 
         echo "<span class=\"text\"> $name </span><br>";
         echo "<span class=\"text\"> $street</span><br>";
