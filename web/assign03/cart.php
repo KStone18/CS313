@@ -27,7 +27,7 @@
        <?php echo "<span class=\"textTotal\"> Total: \$$totalPrice.00</span><br>"; ?>
        </div>
 
-
+        
 
 
 	 </div>

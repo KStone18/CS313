@@ -17,11 +17,23 @@
           $totalPrice += $idAssoc[$id]["price"];
 
         }
-        var_dump($_POST)
-        //$name = htmlspecialchars($_POST[""])
-
-
+        
+        $name = htmlspecialchars($_POST["full_name"]);
+        $street = htmlspecialchars($_POST["street"]);
+        $city = htmlspecialchars($_POST["city"]);
+        $state = htmlspecialchars($_POST["state"]);
+        $zip = htmlspecialchars($_POST["zip"]);
         ?>
+
+        <div class="checkoutBtn">
+       <?php 
+        echo "<span class=\"text\"> $name </span><br>";
+        echo "<span class=\"text\"> $street</span><br>";
+        echo "<span class=\"text\"> $city $state $zip</span><br>";
+        
+
+       ?>
+       </div>
 
 
    </div>
