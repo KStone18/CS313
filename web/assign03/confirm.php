@@ -9,7 +9,7 @@
   ?>
   <div class="screen">
     <div  class="confirm">
-      
+      <h3>Confirmation Page</h3>
          <?php
          $totalPrice = 0;
          foreach ($_SESSION['cart'] as $id) {
