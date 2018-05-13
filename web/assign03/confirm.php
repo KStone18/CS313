@@ -8,7 +8,7 @@
   include('assocArray.php');
   ?>
   <div class="screen">
-    <div  class="shopCart">
+    <div  class="confirm">
       
          <?php
          $totalPrice = 0;
@@ -18,7 +18,7 @@
 
         }
 
-        
+
 
         ?>
 

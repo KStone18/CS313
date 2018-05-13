@@ -31,8 +31,12 @@
 	font-weight: bold;
 }
 
-.shopCart {
+.confirm {
 	text-align: center;
+}
+
+.shopCart {
+
 	/* position: relative; */
 	/* top: 300px; */
 	/* right: 500px; */
