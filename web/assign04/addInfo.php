@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
  <title> abcd </title>
-  <?php include('header.php'); ?>
+  <?php include('headerA.php'); ?>
 
 
 </body>
