@@ -43,6 +43,9 @@ button:hover {
     opacity:1;
 }
 
+.loginLink {
+	margin-right: 15px;
+}
 /* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
