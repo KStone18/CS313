@@ -6,7 +6,9 @@
 <head>
  <title> abcd </title>
   <?php include('header.php'); ?>
- 
+ <div class="body">
+  
+ </div>
 
 </body>
 </html>
