@@ -5,10 +5,8 @@
 <html lang="en">
 <head>
  <title> abcd </title>
-  <?php include('header.php'); ?>
- <div class="screen">
+  <?php include('headerA.php'); ?>
 
- </div>
 
 </body>
 </html>
