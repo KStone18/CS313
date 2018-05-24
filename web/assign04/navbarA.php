@@ -22,13 +22,17 @@
             <span class="glyphicon glyphicon-user"></span> Name of User
           </a>
         </li> -->
+        <li><a href="addInfo.php">
+          <span class="glyphicon glyphicon-plus" id=""></span>
+
+        </a></li>
 
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" id="navDropDownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-user"></span> Name Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navDropDownLink">
-            <a class="dropdown-item" href="#">Preferences</a>
+            <!-- <a class="dropdown-item" href="#">Preferences</a> -->
           <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Logout</a>
           </div>
