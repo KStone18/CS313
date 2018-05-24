@@ -59,6 +59,7 @@ button:hover {
 .container {
 	margin-top: 150px;
     padding: 16px;
+    width: 500px;
 }
 
 /* Clear floats */
@@ -71,7 +72,7 @@ button:hover {
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
-       width: 100%;
+       width: 200px;
     }
 }
 
