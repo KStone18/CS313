@@ -18,7 +18,7 @@
       <ul class="nav navbar-nav navbar-right">
         
        <!--  <li><a href="signUp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in loginLink">Login</span></a></li>
+        <li><a href="login.php" class="loginLink"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
       </ul>
     </div>
   </div>
