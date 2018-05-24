@@ -29,6 +29,10 @@ button:hover {
     width: 40%;
 }
 
+.loginBtn, .box {
+  margin: 10px;
+}
+
 .cancelbtnLogin {
     width: auto;
     padding: 10px 18px;
