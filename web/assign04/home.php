@@ -6,8 +6,8 @@
 <head>
  <title> abcd </title>
   <?php include('header.php'); ?>
- <div class="body">
-  
+ <div class="screen">
+
  </div>
 
 </body>
