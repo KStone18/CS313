@@ -56,10 +56,10 @@ button:hover {
 }
 
 /* Add padding to container elements */
-.container {
+.containerSign {
 	margin-top: 150px;
     padding: 16px;
-    width: 500px;
+    width: 300px;
 }
 
 /* Clear floats */
@@ -72,7 +72,7 @@ button:hover {
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
-       width: 200px;
+       width: 100%;
     }
 }
 
