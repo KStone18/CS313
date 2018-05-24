@@ -7,7 +7,7 @@
  <title> abcd </title>
   <?php include('header.php');?>
  
-  <form action="/action_page.php" style="border:1px solid #ccc">
+  <form action="addInfo.php" style="border:1px solid #ccc">
     <div class="containerSign">
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
