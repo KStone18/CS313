@@ -57,7 +57,8 @@ button:hover {
 
 /* Add padding to container elements */
 .containerSign {
-	margin-top: 150px;
+	margin: auto;
+	margin-top: 100px;
     padding: 16px;
     width: 300px;
 }
