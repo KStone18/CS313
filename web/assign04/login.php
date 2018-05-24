@@ -25,7 +25,7 @@
 	  </div>
 
 	  <div class="containerLogin" style="background-color:#f1f1f1">
-	    <button type="submit" class="btn btn-primary btn-md cancelbtnLogin">Cancel</button> 
+	  	<input type="button" class="btn btn-primary btn-md cancelbtnLogin" onclick="location.href='home.php';" value="Cancel" />
 	    <span class="psw">Forgot <a href="#">username?</a></span> 
 	    <span class="psw">Forgot <a href="#">password?</a></span>
 	  </div>
