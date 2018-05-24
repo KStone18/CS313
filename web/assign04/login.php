@@ -24,7 +24,7 @@
 	  </div>
 
 	  <div class="containerLogin" style="background-color:#f1f1f1">
-	    <button type="submit" class="btn btn-primary btn-md cancelbtnLogin">Sign Up</button> 
+	    <button type="submit" class="btn btn-primary btn-md cancelbtnLogin">Cancel</button> 
 	    <span class="psw">Forgot <a href="#">password?</a></span>
 	  </div>
 	</form>
