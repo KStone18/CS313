@@ -16,12 +16,12 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="cart.php">
-          <span class="glyphicon glyphicon-shopping-cart" id=""></span>
+        <li><a href="addInfo.php">
+          <span class="glyphicon glyphicon-plus" id=""></span>
 
         </a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="signUp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
