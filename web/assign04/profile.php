@@ -59,6 +59,7 @@
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
+		var_dump($stream);
     	$nme = $stream["name"];
     	$desc = $stream["description"];
     	$lat = $stream["latitude"];
