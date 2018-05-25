@@ -63,7 +63,7 @@
 
 	$statement = $db->prepare($query);
 	//$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
-	//$statement->execute();
+	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
     	$nme = $stream["name"];
