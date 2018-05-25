@@ -10,16 +10,28 @@
  <title>  </title>
   <?php include('headerA.php'); ?>
 
-  <form action="profile.php" method="POST" style="border:1px solid #ccc">
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="border:1px solid #ccc">
     <div class="containerSign">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
+      <h1>Search database</h1>
+      <p>Please fill in this form to search for information.</p>
       <hr>
 
-      <label for="Username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uName" required>
+      <div class="form-group">
+      <label for="Stream"><b>Select Stream</b></label>
+      <div class="form-group">
+        <select name="book" class="form-control" id="sel1">
+        <?php 
+            foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
+               echo "<option>" . $row['name'] . "</option>";
+            } 
+         ?>          
+        </select>
+        <br>
+      </div>
 
-      <label for="psw"><b>Password</b></label>
+<!-- 
+
+      <label for="psw"><b></b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
       <label for="psw-repeat"><b>Repeat Password</b></label>
@@ -30,7 +42,7 @@
       </label>
       
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
+ -->
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->
         <button type="submit" class="btn btn-primary btn-md signupbtn">Sign Up</button>  
