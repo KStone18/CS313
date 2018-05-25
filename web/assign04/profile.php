@@ -50,8 +50,8 @@
   	<?php
 
 
-  	$streamName = $_POST["stream"];
-  	echo "$streamName";
+  	//$streamName = $_POST["stream"];
+  	//echo "$streamName";
    	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE s.name = :name";
 
 
