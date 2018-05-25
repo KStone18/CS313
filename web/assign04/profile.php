@@ -25,6 +25,7 @@
         	$valueName = "";
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
             	$valueName = $row['name'];
+            	echo $valueName;
                 echo '<option value="$valueName">' . $row['name'] . '</option>';
             } 
 
