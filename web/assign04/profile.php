@@ -50,22 +50,25 @@
 
 
   	$streamName = $_POST["stream"];
-  	echo "$streamName";
-   	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id"; //WHERE s.name = :name";
+  	
+  	//echo "$streamName";
+
+   	$query = "SELECT s.name as stream_name, si.name as site_name FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = :sName";
 
 
 	$statement = $db->prepare($query);
-	//$statement->bindValue(":name", $streamName, PDO::PARAM_STR);
+	$statement->bindValue(":sName", $streamName, PDO::PARAM_STR);
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
-		var_dump($stream);
-    	$nme = $stream["name"];
+		//var_dump($stream);
+		$s_name = $stream["streamName"];
+    	$si_name = $stream["site_name"];
     	$desc = $stream["description"];
     	$lat = $stream["latitude"];
     	$long = $stream["longitude"];
     
-    	echo "<li>$nme: $desc - $lat, $long </li>";
+    	echo "<li>$s_name <br> $si_name: $desc - $lat, $long </li>";
 	}
 	
               
