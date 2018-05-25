@@ -61,7 +61,7 @@
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
-		var_dump($stream);
+		//var_dump($stream);
 		$s_name = $stream["streamName"];
     	$si_name = $stream["site_name"];
     	$desc = $stream["description"];
