@@ -54,7 +54,8 @@
     </div>
   </form>
   
-  <div class="dataForm containerSign">
+  <div class="containerSign">
+  	<h2>Results from Database</h2>
   <?php
       $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE book=:book');
       $stmt->execute(array(':book' => $book));
