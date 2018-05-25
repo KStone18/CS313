@@ -33,20 +33,6 @@
         <br>
       </div>
 
-<!-- 
-
-      <label for="psw"><b></b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-      
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
- -->
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->
         <button type="submit" class="btn btn-primary btn-md signupbtn">Search</button>  
@@ -61,6 +47,7 @@
 
    	$query = "SELECT s.name, si.name, si.description si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id ";
 
+   	echo "$query <br>";
 	$statement = $db->prepare($query);
 	//$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
 	$statement->execute();
