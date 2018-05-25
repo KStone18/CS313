@@ -54,11 +54,10 @@
   	
   	//echo "$streamName";
 
-   	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = :stream";
+   	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id"; //WHERE stream_name = :stream";
 
 
-	$statement = $db->prepare($query);
-	echo "$statement"; 
+	$statement = $db->prepare($query); 
 	$statement->bindValue(":stream", $streamName, PDO::PARAM_STR);
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
