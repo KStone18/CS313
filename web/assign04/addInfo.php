@@ -7,6 +7,9 @@
  <title> abcd </title>
   <?php include('headerA.php'); ?>
 
+  <form >
+
+  </form>
 
 </body>
 </html>
