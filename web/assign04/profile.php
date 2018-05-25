@@ -68,7 +68,7 @@
     	$lat = $stream["latitude"];
     	$long = $stream["longitude"];
     
-    	echo "<span><strong>$s_name </strong><br> $si_name: $desc - $lat, $long <span>";
+    	echo "<span><strong>$s_name </strong><br> $si_name: $desc - $lat, $long<br> <span>";
 	}
 	
               
