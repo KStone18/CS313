@@ -44,7 +44,7 @@
   
   <div class="containerResult">
   	<h3>Results from Database</h3>
-  	<ul>
+  	
 
   	<?php
 
@@ -68,12 +68,12 @@
     	$lat = $stream["latitude"];
     	$long = $stream["longitude"];
     
-    	echo "<li>$s_name <br> $si_name: $desc - $lat, $long </li>";
+    	echo "<span><strong>$s_name </strong><br> $si_name: $desc - $lat, $long <span>";
 	}
 	
               
    ?>
-	</ul>
+	
   </div>
 
 </body>
