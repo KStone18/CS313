@@ -44,8 +44,9 @@ button:hover {
 }
 
 .pForm {
-	margin-top: 200px;
+	margin: 50px;
 	margin: auto;
+	height: 300px;
 
 }
 
