@@ -10,7 +10,7 @@
  <title>  </title>
   <?php include('headerA.php'); ?>
 
-  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get" class="dataForm" >
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
       <h1>Search database</h1>
       <p>Please fill in this form to search for information.</p>
@@ -49,7 +49,8 @@
   	<?php
 
 
-  	$streamName = $_GET["stream"];
+  	$streamName = $_POST["stream"];
+  	var_dump($_POST)
   	
   	//echo "$streamName";
 
