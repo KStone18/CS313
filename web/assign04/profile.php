@@ -62,7 +62,7 @@
   	
   	echo "$streamName";
 
-   	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = 'Robinson Creek'";
+   	// $query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = 'Robinson Creek'";
 
 
 	$statement = $db->prepare('SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = :stream'); 
