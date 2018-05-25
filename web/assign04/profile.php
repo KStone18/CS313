@@ -24,8 +24,7 @@
         <?php 
         	$valueName = "";
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
-            	$valueName = $row['name'];
-            	echo $valueName;
+            	//$valueName = $row['name'];
                 echo '<option value="$valueName">' . $row['name'] . '</option>';
             } 
 
@@ -52,11 +51,11 @@
 
   	//$streamName = $_POST["stream"];
   	//echo "$streamName";
-   	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE s.name = :name";
+   	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id"; //WHERE s.name = :name";
 
 
 	$statement = $db->prepare($query);
-	$statement->bindValue(":name", $streamName, PDO::PARAM_STR);
+	//$statement->bindValue(":name", $streamName, PDO::PARAM_STR);
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
