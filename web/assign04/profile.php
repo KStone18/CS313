@@ -54,7 +54,7 @@
     </div>
   </form>
   
-  <div class="containerSign">
+  <div class="containerResult">
   	<h3>Results from Database</h3>
   <?php
       $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE book=:book');

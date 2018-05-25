@@ -81,6 +81,12 @@ button:hover {
     width: 500px;
 }
 
+.containerResult {
+	margin: auto;
+	margin-top: 10px;
+    width: 500px;
+}
+
 /* Clear floats */
 .clearfix::after {
     content: "";
