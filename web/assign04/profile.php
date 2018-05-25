@@ -27,6 +27,7 @@
             } 
 
 
+
          ?>          
         </select>
         <br>
@@ -56,14 +57,24 @@
   
   <div class="containerResult">
   	<h3>Results from Database</h3>
-  <?php
-      $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE book=:book');
-      $stmt->execute(array(':book' => $book));
-      $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-      foreach ($rows as $row) {
-        echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
-            
-      }
+  	<?php
+
+   	$query = "SELECT s.name, si.name, si.description si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id ";
+
+	$statement = $db->prepare($query);
+	//$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
+	//$statement->execute();
+	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
+	{
+    	$nme = $stream["name"];
+    	$desc = $stream["description"];
+    	$lat = $stream["latitude"];
+    	$long = $stream["longitude"];
+    
+    	echo "<li>$nme: $desc - $lat, $long $</li>";
+	}
+	
+              
    ?>
   </div>
 
