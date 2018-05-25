@@ -53,7 +53,7 @@
   	
   	//echo "$streamName";
 
-   	$query = "SELECT s.name as stream_name, si.name as site_name FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = :sName";
+   	$query = "SELECT s.name as stream_name, si.name as site_name FROM stream s INNER JOIN site si ON si.stream_id = s.id"; //WHERE stream_name = :sName";
 
 
 	$statement = $db->prepare($query);
