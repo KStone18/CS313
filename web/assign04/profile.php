@@ -43,11 +43,13 @@
   
   <div class="containerResult">
   	<h3>Results from Database</h3>
+  	<ul>
   	<?php
 
-   	$query = "SELECT s.name, si.name, si.description si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id ";
 
-   	echo "$query <br>";
+   	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id ";
+
+
 	$statement = $db->prepare($query);
 	//$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
 	$statement->execute();
@@ -63,6 +65,7 @@
 	
               
    ?>
+	</ul>
   </div>
 
 </body>
