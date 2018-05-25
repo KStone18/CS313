@@ -72,6 +72,7 @@
 	$statement->execute(array(':stream' => $stream));
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $str)
 	{
+		echo "here";
 		//var_dump($stream);
 		$s_name = $str["stream_name"];
     	$si_name = $str["site_name"];
