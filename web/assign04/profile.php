@@ -24,8 +24,7 @@
         <?php 
         	$valueName = "";
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
-            	//$valueName = $row['name'];
-                echo '<option value="$valueName">' . $row['name'] . '</option>';
+                echo '<option value="'. $row['name'].'">' . $row['name'] . '</option>';
             } 
 
 
@@ -46,11 +45,12 @@
   <div class="containerResult">
   	<h3>Results from Database</h3>
   	<ul>
+
   	<?php
 
 
-  	//$streamName = $_POST["stream"];
-  	//echo "$streamName";
+  	$streamName = $_POST["stream"];
+  	echo "$streamName";
    	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id"; //WHERE s.name = :name";
 
 
