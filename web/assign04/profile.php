@@ -9,15 +9,12 @@
   <?php include('headerA.php'); ?>
 
   <div class="test"> 
-	<?php 
-	$db->query('SELECT username FROM app_user') as $name; 
-	echo "$name"."\'s Profile";
-	?>
+	
   </div>
 
 
   <form action="" class="pForm">
- 	
+ 	<input type="text" value="john"/>
   </form>
 
   
