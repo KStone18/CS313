@@ -9,19 +9,7 @@
 <head>
  <title>  </title>
   <?php include('headerA.php'); ?>
-   <?php 
-        $stream = "";
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-           $stream = test_input($_POST["stream"]);
-           echo "<p>HERE IS THE BOOK: $stream</p>";
-        }
-        function test_input($data) {
-         $data = trim($data);
-         $data = stripslashes($data);
-         $data = htmlspecialchars($data);          
-         return $data;
-        }
-    ?>
+   
 
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
@@ -39,6 +27,9 @@
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
                 echo '<option value="'. $row['name'].'">' . $row['name'] . '</option>';
             } 
+
+
+
          ?>          
         </select>
         <br>
@@ -54,31 +45,30 @@
   
   <div class="containerResult">
   	<h3>Results from Database</h3>
+  	
+
   	<?php
 
 
   	$streamName = $_POST["stream"];
   	//var_dump($_POST);
   	
-  	echo "$streamName";
+  	
 
-   	// $query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = 'Robinson Creek'";
+   	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE s.name = :stream";
 
 
-	$statement = $db->prepare('SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = :stream'); 
-	//$statement->bindValue(":stream", $streamName, PDO::PARAM_STR);
-	//$statement->execute();
-
-	$statement->execute(array(':stream' => $stream));
-	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $str)
+	$statement = $db->prepare($query); 
+	$statement->bindValue(":stream", $streamName, PDO::PARAM_STR);
+	$statement->execute();
+	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
-		echo "here";
 		//var_dump($stream);
-		$s_name = $str["stream_name"];
-    	$si_name = $str["site_name"];
-    	$desc = $str["description"];
-    	$lat = $str["latitude"];
-    	$long = $str["longitude"];
+		$s_name = $stream["stream_name"];
+    	$si_name = $stream["site_name"];
+    	$desc = $stream["description"];
+    	$lat = $stream["latitude"];
+    	$long = $stream["longitude"];
     
     	echo "<span><strong>$s_name </strong><br> $si_name: $desc - $lat, $long<br> <span>";
 	}
