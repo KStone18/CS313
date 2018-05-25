@@ -57,14 +57,11 @@
 
 
 	$statement = $db->prepare($query);
-	echo "$streamName";
 	$statement->bindValue(":stream", $streamName, PDO::PARAM_STR);
-	echo "$statement";
-
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
-		//var_dump($stream);
+		var_dump($stream);
 		$s_name = $stream["stream_name"];
     	$si_name = $stream["site_name"];
     	$desc = $stream["description"];
