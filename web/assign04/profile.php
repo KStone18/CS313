@@ -10,8 +10,7 @@
 
   <div class="test"> 
 	<?php 
-	$db->query('SELECT username FROM app_user') as $name; 
-	echo "$name" . "\'s Profile";
+	
 	?>
   </div>
 
