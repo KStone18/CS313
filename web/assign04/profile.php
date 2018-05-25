@@ -58,6 +58,7 @@
 
 
 	$statement = $db->prepare($query);
+	echo "$statement"; 
 	$statement->bindValue(":stream", $streamName, PDO::PARAM_STR);
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
