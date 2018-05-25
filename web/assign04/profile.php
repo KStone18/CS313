@@ -50,11 +50,11 @@
 
 
   	$streamName = $_POST["stream"];
-  	var_dump($_POST);
+  	//var_dump($_POST);
   	
   	//echo "$streamName";
 
-   	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = '$streamName'";
+   	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE stream_name = 'Robinson Creek'";
 
 
 	$statement = $db->prepare($query); 
