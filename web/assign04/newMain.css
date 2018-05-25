@@ -21,6 +21,9 @@ input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
+h3 {
+	margin-top: 50px;
+}
 
 hr {
     border: 1px solid #f1f1f1;

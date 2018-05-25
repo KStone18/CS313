@@ -8,7 +8,7 @@
   <?php include('header.php');?>
 
 
-	<form action="profile.php">
+	<form action="profile.php" method="POST">
 	  
 	  <div class="containerLogin">
 	    <label for="uname"><b>Username</b></label>

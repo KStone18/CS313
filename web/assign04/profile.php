@@ -1,5 +1,7 @@
 <?php
   session_start();
+  $_SESSION["user"] = $_POST["uname"];
+
   include('database.php');
 ?>
 <!DOCTYPE html>
@@ -9,7 +11,7 @@
   <?php include('headerA.php'); ?>
 
   <div class="test"> 
-	
+	<h3>Hello </h3>
   </div>
 
 
