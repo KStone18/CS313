@@ -7,9 +7,6 @@
  <title> abcd </title>
   <?php include('headerA.php'); ?>
 
-
-
-
   <form action="" class="pForm" onsubmit="initMap()">
   	Latitude:<br>
  	 <input id="lat" type="text" name="latitude">
