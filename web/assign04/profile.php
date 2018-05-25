@@ -10,7 +10,7 @@
  <title>  </title>
   <?php include('headerA.php'); ?>
 
-  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="border:1px solid #ccc">
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
       <h1>Search database</h1>
       <p>Please fill in this form to search for information.</p>
@@ -18,12 +18,15 @@
 
       <div class="form-group">
       <label for="Stream"><b>Select Stream</b></label>
+      
       <div class="form-group">
         <select name="book" class="form-control" id="sel1">
         <?php 
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
                echo "<option>" . $row['name'] . "</option>";
             } 
+
+
          ?>          
         </select>
         <br>
@@ -45,13 +48,23 @@
  -->
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->
-        <button type="submit" class="btn btn-primary btn-md signupbtn">Sign Up</button>  
+        <button type="submit" class="btn btn-primary btn-md signupbtn">Search</button>  
        
       </div>
     </div>
   </form>
   
-
+  <div class="dataForm containerSign">
+  <?php
+      $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE book=:book');
+      $stmt->execute(array(':book' => $book));
+      $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      foreach ($rows as $row) {
+        echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
+            
+      }
+   ?>
+  </div>
 
 </body>
 </html>

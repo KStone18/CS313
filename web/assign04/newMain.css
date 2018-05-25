@@ -43,7 +43,9 @@ button {
 button:hover {
     opacity:1;
 }
-
+.dataForm {
+	border:1px solid #ccc;
+}
 .pForm {
 	margin: 50px;
 	margin: auto;
