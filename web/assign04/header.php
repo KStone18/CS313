@@ -10,6 +10,5 @@
       
    </head>
    <body>
-      <?php include('database.php');?>
       <?php include('navbar.php');?>
       

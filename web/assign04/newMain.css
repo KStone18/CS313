@@ -43,6 +43,16 @@ button:hover {
     opacity:1;
 }
 
+.pForm {
+	margin: auto;
+
+}
+
+.test {
+	margin-top: 400px;
+	margin: auto;
+}
+
 .loginLink {
 	margin-right: 15px;
 }

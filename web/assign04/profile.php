@@ -1,23 +1,26 @@
 <?php
   session_start();
+  include('database.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title> abcd </title>
+ <title> <?php ($db->query('SELECT username FROM app_user') as $name); echo "$name \'s Profile"; </title>
   <?php include('headerA.php'); ?>
 
-  <form action="" class="pForm" onsubmit="initMap()">
-  	Latitude:<br>
- 	 <input id="lat" type="text" name="latitude">
-  	<br>
+  <div> 
+	<?php 
+	$db->query('SELECT username FROM app_user') as $name; 
+	echo "$name"."\'s Profile";
+	?>
+  </div>
 
-	Longitude:<br>
- 	 <input id="long" type="text" name="longitude">
 
+  <form action="" class="pForm">
+ 	
   </form>
 
-  <div id="map" class="map"></div>
+  
 
 
 </body>
