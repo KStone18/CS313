@@ -20,10 +20,12 @@
       <label for="Stream"><b>Select Stream</b></label>
       
       <div class="form-group">
-        <select name="book" class="form-control" id="sel1">
+        <select name="stream" class="form-control" id="sel1">
         <?php 
+        	$valueName = "";
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
-               echo "<option>" . $row['name'] . "</option>";
+            	$valueName = $row['name'];
+                echo '<option value="$valueName">' . $row['name'] . '</option>';
             } 
 
 
@@ -47,11 +49,12 @@
   	<?php
 
 
-   	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id ";
+  	$streamName = $_POST["stream"];
+   	$query = "SELECT * FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE s.name = :name";
 
 
 	$statement = $db->prepare($query);
-	//$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
+	$statement->bindValue(":name", $streamName, PDO::PARAM_STR);
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
@@ -60,7 +63,7 @@
     	$lat = $stream["latitude"];
     	$long = $stream["longitude"];
     
-    	echo "<li>$nme: $desc - $lat, $long $</li>";
+    	echo "<li>$nme: $desc - $lat, $long </li>";
 	}
 	
               
