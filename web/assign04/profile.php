@@ -42,7 +42,7 @@
     </div>
   </form>
   
-  <div class="containerResult">
+  <div class="containerResult" >
   	<h3>Results from Database</h3>
   	
 
@@ -63,7 +63,7 @@
     	$lat = $stream["latitude"];
     	$long = $stream["longitude"];
     
-    	echo "<span><strong>$s_name </strong><br> $si_name: $desc ". "\t". "$lat, $long<br> <span>";
+    	echo "<span><strong>$s_name </strong><br> $si_name: $desc : $lat, $long<br> <span>";
 	}     
    ?>
 	
