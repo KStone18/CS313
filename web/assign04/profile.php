@@ -17,6 +17,7 @@
       <p>Please fill in this form to search for information.</p>
       <hr>
 
+
       <div class="form-group">
       <label for="Stream"><b>Select Stream</b></label>
       
@@ -27,13 +28,11 @@
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
                 echo '<option value="'. $row['name'].'">' . $row['name'] . '</option>';
             } 
-
-
-
          ?>          
         </select>
         <br>
       </div>
+
 
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->
@@ -48,12 +47,7 @@
   	
 
   	<?php
-
-
   	$streamName = $_POST["stream"];
-  	//var_dump($_POST);
-  	
-  	
 
    	$query = "SELECT s.name as stream_name, si.name as site_name, si.description, si.latitude, si.longitude FROM stream s INNER JOIN site si ON si.stream_id = s.id WHERE s.name = :stream";
 
@@ -63,17 +57,14 @@
 	$statement->execute();
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $stream)
 	{
-		//var_dump($stream);
 		$s_name = $stream["stream_name"];
     	$si_name = $stream["site_name"];
     	$desc = $stream["description"];
     	$lat = $stream["latitude"];
     	$long = $stream["longitude"];
     
-    	echo "<span><strong>$s_name </strong><br> $si_name: $desc - $lat, $long<br> <span>";
-	}
-	
-              
+    	echo "<span><strong>$s_name </strong><br> $si_name: $desc ". "     ". "$lat, $long<br> <span>";
+	}     
    ?>
 	
   </div>
