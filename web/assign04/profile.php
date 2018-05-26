@@ -23,6 +23,7 @@
       
       <div class="form-group">
         <select name="stream" class="form-control" id="sel1">
+        	<option value="none"></option>
         <?php 
         	$valueName = "";
             foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
