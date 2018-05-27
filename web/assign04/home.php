@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title> abcd </title>
+ <title> Data Collection </title>
   <?php include('header.php');?>
  
   <form action="profile.php" method="post" style="border:1px solid #ccc">

@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>  </title>
+ <title> Profile </title>
   <?php include('headerA.php'); ?>
    
 
