@@ -17,11 +17,6 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
 
-        <!-- <li>
-          <a href="#">
-            <span class="glyphicon glyphicon-user"></span> Name of User
-          </a>
-        </li> -->
         <li><a href="addInfo.php">
           <span class="glyphicon glyphicon-plus" id=""></span>
 
