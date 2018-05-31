@@ -28,5 +28,12 @@ $name = $row["name"];
 	<?php 
 	echo "<h1>Showing Notes for: $number - $name</h1>";
 	?>
+
+<form action="insertNote.php" method="POST">
+	<input type="hidden" name="course_id" value="<?php echo $courseId;?>">
+	<input type="date" name="date"><br>
+	<textarea name="content" placeholder="Content"></textarea>
+</form>
+
 </body>
 </html>
