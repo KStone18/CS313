@@ -1,13 +1,17 @@
 <?php
   session_start();
-  $_SESSION["user"] = $_POST["uname"];
-
   include('database.php');
+  $_SESSION["user"] = $_POST["uname"]; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title> Profile </title>
+ <title> 
+ 	<?php 
+ 	$user_name = $_SESSION["user"];
+ 	echo "$user_name Profile";
+ 	?>
+</title>
   <?php include('headerA.php'); ?>
    
 
