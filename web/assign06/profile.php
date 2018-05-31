@@ -10,14 +10,15 @@
  <title> 
  	Profile
 </title>
-  <?php include('headerA.php'); 
-     var_dump($_POST);
-
-  ?>
+  <?php include('headerA.php');?>
 
 
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
+
+    	<?php var_dump($_POST); ?>
+
+
       <h1>Search database</h1>
       <p>Please fill in this form to search for information.</p>
       <hr>
