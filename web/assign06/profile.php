@@ -1,7 +1,7 @@
 <?php
   session_start();
   include('database.php');
-  $_SESSION["user"] = $_POST["uName"]; 
+  $_SESSION["user"] = $_POST["uame"]; 
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,6 @@
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
 
-    	<?php var_dump($_POST); ?>
 
 
       <h1>Search database</h1>

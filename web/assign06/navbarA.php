@@ -1,4 +1,3 @@
-<?php session_start();?>
 <nav class="navbar navbar-inverse navbar-fixed-top strip">
   <div class="container-fluid">
     <div class="navbar-header">
