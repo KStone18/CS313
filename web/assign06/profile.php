@@ -7,10 +7,7 @@
 <html lang="en">
 <head>
  <title> 
- 	<?php 
- 	$user_name = $_SESSION["user"];
- 	echo "$user_name Profile";
- 	?>
+ 	Profile
 </title>
   <?php include('headerA.php'); ?>
    

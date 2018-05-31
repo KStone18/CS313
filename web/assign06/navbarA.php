@@ -31,11 +31,9 @@
           <a href="#" class="nav-link dropdown-toggle" id="navDropDownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-user"></span> 
                 <?php 
-                $usr_name = $_POST["uName"];
-                
-                $query = "SELECT username FROM app_user WHERE username = :name";
-
-                ?> Profile
+ 				$user_name = $_SESSION["user"];
+ 				echo "$user_name Profile";
+ 				?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navDropDownLink">
             <!-- <a class="dropdown-item" href="#">Preferences</a> -->
