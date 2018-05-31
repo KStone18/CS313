@@ -32,7 +32,7 @@
                 <span class="glyphicon glyphicon-user"></span> 
                 <?php 
  				$user_name = $_SESSION["user"];
- 				echo $user_name . "Profile";
+ 				echo "$user_name Profile";
  				?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navDropDownLink">

@@ -1,7 +1,7 @@
 <?php
   session_start();
   include('database.php');
-  $_SESSION["user"] = $_POST["uname"]; 
+  $_SESSION["user"] = $_POST["uName"]; 
 
 ?>
 <!DOCTYPE html>
