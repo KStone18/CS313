@@ -2,6 +2,7 @@
   session_start();
   include('database.php');
   $_SESSION["user"] = $_POST["uname"]; 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,8 +10,11 @@
  <title> 
  	Profile
 </title>
-  <?php include('headerA.php'); ?>
-   
+  <?php include('headerA.php'); 
+     var_dump($_POST);
+
+  ?>
+
 
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
