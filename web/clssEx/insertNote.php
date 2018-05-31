@@ -5,7 +5,7 @@ $content = htmlspecialchars($_POST["content"]);
 echo "Course: $courseId\n";
 echo "date: $date\n";
 echo "content: $content\n";
-require("dbConnect.php");
+require("data.php");
 $db = get_db();
 $query = "INSERT INTO note (course_id, content, date) VALUES (:courseId, :content, :date)";
 $statement = $db->prepare($query);
