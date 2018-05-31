@@ -5,7 +5,7 @@ $db = get_db();
 
 
 if (!isset($db)) {
-	die("DB Connection was not set")
+	die("DB Connection was not set");
 }
 
 $query = "Select id, name, number FROM course";
