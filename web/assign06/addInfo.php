@@ -9,7 +9,7 @@
 
  	 <form action="profile.php" method="post" style="border:1px solid #ccc">
     <div class="containerSign">
-      <h1>Sign Up</h1>
+      <h1>New </h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
 
