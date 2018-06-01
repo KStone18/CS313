@@ -15,7 +15,7 @@
 	
 	echo $stream_id; 
 	
-	$query = "INSERT INTO site (name, description, latitude, longitude, stream_id) VALUES (:name, :description, :latitude, :longitude, :stream_id)";
+	/*$query = "INSERT INTO site (name, description, latitude, longitude, stream_id) VALUES (:name, :description, :latitude, :longitude, :stream_id)";
 
 	// $statement = $db->prepare($query);
 	// $statement->bindValue(":name", $streamName, PDO::PARAM_STR);
