@@ -19,7 +19,7 @@
           <option value="none"></option>
         <?php 
           $valueName = "";
-            foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
+            foreach ($db->query('SELECT DISTINCT id, name FROM stream') as $row) {
                 echo '<option value="'. $row['id'].'">' . $row['name'] . '</option>';
             } 
          ?>          
