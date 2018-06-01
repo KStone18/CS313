@@ -38,7 +38,7 @@
       <label for="content"><b>Journal Content</b></label>
       <textarea name="contentOfJournal" placeholder="Add Content" required></textarea>
       <hr>
-      
+
       <label for="isMale"><b>Gender</b></label>
       <select class="selectpicker" name="gender" title="Choose one of the following...">
         <option value="true">Male</option>
@@ -51,13 +51,13 @@
         <option value="false">No</option>
       </select> <br> 
 
-      <label for="species"><b>Species</b></label>
-       <input type="checkbox" name="species" value="Brown Trout">Trout<br>
-       <input type="checkbox" name="species" value="Brook Trout">Trout<br>
-       <input type="checkbox" name="species" value="Bull Trout">Trout<br>
-       <input type="checkbox" name="species" value="Rainbow Trout">Trout<br>
-       <input type="checkbox" name="species" value="Yellowstone Cutthroat Trout">Trout<br>
-       <input type="checkbox" name="species" value="WhiteFish">Trout<br>
+      <label for="species"><b>Species</b></label><br>
+       <input type="checkbox" name="species" value="Brown Trout">Brown Trout<br>
+       <input type="checkbox" name="species" value="Brook Trout">Brook Trout<br>
+       <input type="checkbox" name="species" value="Bull Trout">Bull Trout<br>
+       <input type="checkbox" name="species" value="Rainbow Trout">Rainbow Trout<br>
+       <input type="checkbox" name="species" value="Yellowstone Cutthroat Trout">Yellowstone Cutthroat Trout<br>
+       <input type="checkbox" name="species" value="WhiteFish">Mountain WhiteFish<br>
      
      
 
