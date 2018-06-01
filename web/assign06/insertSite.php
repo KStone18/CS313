@@ -14,23 +14,26 @@
 	$pregnant = htmlspecialchars($_POST["pregnant"]);
 	$species = htmlspecialchars($_POST["species"]);
 
-
-	//$stream_id = $PDO->lastInsertId('stream_id_seq');
-
-
-
-
 	
 	$query = "INSERT INTO site (name, description, latitude, longitude, stream_id) VALUES (:name, :description, :latitude, :longitude, :stream_id)";
 
 	$statement = $db->prepare($query);
-	$statemetn->bindValue(":name", $siteName, PDO::PARAM_STR);
+	$statement->bindValue(":name", $siteName, PDO::PARAM_STR);
 	$statement->bindValue(":description", $description, PDO::PARAM_STR);
 	$statement->bindValue(":latitude", $latitude, PDO::PARAM_STR);
 	$statement->bindValue(":longitude", $longitude, PDO::PARAM_STR);
 	$statement->bindValue(":stream_id", $stream_id, PDO::PARAM_INT);
-
 	$statement->execute();
+
+	// $query2 = "INSERT INTO journal (name, date, content, site_id, author_id) VALUES (:name, :date, :content, :site_id, :author_id)";
+
+	// $statement2 = $db->prepare($query2);
+	// $statement2->bindValue(":name", $journalName, PDO::PARAM_STR);
+	// $statement2->bindValue(":date", $date, PDO::PARAM_STR);
+	// $statement2->bindValue(":content", $content, PDO::PARAM_STR);
+	// $statement2->execute();
+
+	
 
 	header("Location: addInfo.php");
 	die();
