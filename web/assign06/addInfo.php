@@ -48,9 +48,17 @@
       <select class="selectpicker" name="gender" title="Choose one of the following...">
         <option value="true">Yes</option>
         <option value="false">No</option>
+      </select> <br> 
+
+      <label for="species"><b>Species</b></label>
+      <select class="selectpicker" multiple name="species" title="Choose from the following...">
+        <option value="BrownTrout">Brown Trout</option>
+        <option value="BrookTrout">Brook Trout</option>
+        <option value="BullTrout">Bull Trout</option>
+        <option value="RainbowTrout">Rainbow Trout</option>
+        <option value="YellowstoneCutthroatTrout">Yellowstone Cutthroat Trout</option>
+        <option value="Whitefish">Mountain Whitefish</option>
       </select>
-
-
 
      <!--  <label for="psw-repeat"><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
