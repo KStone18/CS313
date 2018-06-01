@@ -52,12 +52,12 @@
       </select> <br> 
 
       <label for="species"><b>Species</b></label><br>
-       <input type="checkbox" name="species" value="Brown Trout"> Brown Trout<br>
-       <input type="checkbox" name="species" value="Brook Trout"> Brook Trout<br>
-       <input type="checkbox" name="species" value="Bull Trout"> Bull Trout<br>
-       <input type="checkbox" name="species" value="Rainbow Trout">Rainbow Trout<br>
-       <input type="checkbox" name="species" value="Yellowstone Cutthroat Trout">Yellowstone Cutthroat Trout<br>
-       <input type="checkbox" name="species" value="WhiteFish">Mountain WhiteFish<br>
+       <input type="checkbox" name="species" value="Brown Trout">  Brown Trout<br>
+       <input type="checkbox" name="species" value="Brook Trout">  Brook Trout<br>
+       <input type="checkbox" name="species" value="Bull Trout">  Bull Trout<br>
+       <input type="checkbox" name="species" value="Rainbow Trout">  Rainbow Trout<br>
+       <input type="checkbox" name="species" value="Yellowstone Cutthroat Trout">  Yellowstone Cutthroat Trout<br>
+       <input type="checkbox" name="species" value="WhiteFish">  Mountain WhiteFish<br>
      
      
 
