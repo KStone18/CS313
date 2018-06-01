@@ -15,17 +15,12 @@
 
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
     <div class="containerSign">
-
-
-
       <h1>Search database</h1>
       <p>Please fill in this form to search for information.</p>
       <hr>
 
-
       <div class="form-group">
       <label for="Stream"><b>Select Stream</b></label>
-      
       <div class="form-group">
         <select name="stream" class="form-control" id="sel1">
         	<option value="none"></option>
