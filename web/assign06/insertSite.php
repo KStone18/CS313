@@ -25,9 +25,9 @@
 	$statement->bindValue(":stream_id", $stream_id, PDO::PARAM_INT);
 	$statement->execute();
 
-	$site_id = $pdo->lastInsertId('site_id_seq');
+	//$site_id = $pdo->lastInsertId('site_id_seq');
 
-	echo "$site_id";
+	//echo "$site_id";
 
 	// $query2 = "INSERT INTO journal (name, date, content, site_id, author_id) VALUES (:name, :date, :content, :site_id, :author_id)";
 
@@ -41,6 +41,6 @@
 	// $query3 = ""
 
 
-	// header("Location: addSite.php");
-	// die();
+	 header("Location: addSite.php");
+	 die();
 	?>
