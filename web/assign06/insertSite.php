@@ -25,6 +25,7 @@
 	$statement->bindValue(":stream_id", $stream_id, PDO::PARAM_INT);
 	$statement->execute();
 
+	echo "We are here";
 	//$site_id = $pdo->lastInsertId('site_id_seq');
 
 	//echo "$site_id";
@@ -41,6 +42,6 @@
 	// $query3 = ""
 
 
-	 header("Location: addSite.php");
-	 die();
+	 //header("Location: addSite.php");
+	 //die();
 	?>
