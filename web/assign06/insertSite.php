@@ -12,7 +12,7 @@
 	$gender = htmlspecialchars($_POST["gender"]);
 	$pregnant = htmlspecialchars($_POST["pregnant"]);
 	$species = htmlspecialchars($_POST["species"]);
-	
+	var_dump($_POST);
 
 	$stream_id = $pdo->lastInsertId(sequence_name);
 	var_dump($_POST);
