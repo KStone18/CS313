@@ -17,7 +17,7 @@
 
 	//$stream_id = $PDO->lastInsertId('stream_id_seq');
 
-	var_dump($_POST);
+	//var_dump($_POST);
 	echo "$stream_id";
 
 	
