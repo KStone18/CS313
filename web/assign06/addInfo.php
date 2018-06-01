@@ -9,7 +9,7 @@
 
  	 <form action="profile.php" method="post" style="border:1px solid #ccc">
     <div class="containerSign">
-      <h1>Add Information to Database</h1>
+      <h1>Add Site to Database</h1>
       <hr>
 
       <label for="StreamName"><b>Stream Name</b></label>
