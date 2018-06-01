@@ -13,7 +13,6 @@
       <hr>
 
       <label for="Stream"><b>Select Stream</b></label>
-      <div class="form-group">
         <select name="stream" class="form-control" id="sel1">
           <option value="none"></option>
         <?php 
@@ -24,7 +23,7 @@
          ?>          
         </select>
         <br>
-      </div>
+      
 
 
       <label for="SiteName"><b>Site Name</b></label>
