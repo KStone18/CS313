@@ -18,7 +18,7 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li><a href="addSite.php">
-          <span class="glyphicon glyphicon-plus" id="stream"> Site</span>
+          <span class="glyphicon glyphicon-plus" id="site"> Site</span>
         </a></li>
 
         <li><a href="addInfo.php">
