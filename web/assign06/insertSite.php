@@ -1,17 +1,18 @@
 <?php
 	include('database.php');
-	var_dump($_POST);
 	
-	// $siteName = htmlspecialchars($_POST["siteName"]);
-	// $latitude = htmlspecialchars($_POST["Latitude"]);
-	// $longitude = htmlspecialchars($_POST["Longitude"]);
-	// $description = htmlspecialchars($_POST["descriptOfSite"]);
-	// $journalName = htmlspecialchars($_POST["journalName"]);
-	// $date = htmlspecialchars($_POST["date"]);
-	// $content = htmlspecialchars($_POST["contentOfJouranl"]);
-	// $gender = htmlspecialchars($_POST["gender"]);
-	// $pregnant = htmlspecialchars($_POST["pregnant"]);
-	// $species = htmlspecialchars($_POST["species"]);
+
+	$siteName = htmlspecialchars($_POST["siteName"]);
+    $latitude = htmlspecialchars($_POST["Latitude"]);
+    $longitude = htmlspecialchars($_POST["Longitude"]);
+	$description = htmlspecialchars($_POST["descriptOfSite"]);
+	$journalName = htmlspecialchars($_POST["journalName"]);
+	$date = htmlspecialchars($_POST["date"]);
+	$content = htmlspecialchars($_POST["contentOfJouranl"]);
+	$gender = htmlspecialchars($_POST["gender"]);
+	$pregnant = htmlspecialchars($_POST["pregnant"]);
+	$species = htmlspecialchars($_POST["species"]);
+	var_dump($_POST);
 
 	// $stream_id = $pdo->lastInsertId('stream_id_seq');
 	
