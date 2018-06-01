@@ -11,7 +11,16 @@
     <div class="containerSign">
       <h1>Add Site to Database</h1>
       <hr>
-      
+
+      <select name="stream" class="form-control" id="sel1">
+          <option value="none"></option>
+      <?php
+        $valueName = "";
+          foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
+            echo '<option value="'. $row['id'].'">' . $row['name'] . '</option>';
+          } 
+      ?>
+
       <label for="SiteName"><b>Site Name</b></label>
       <input type="text" placeholder="Enter Site name" name="siteName" required>
 
@@ -48,12 +57,12 @@
       </select> <br><br>
 
       <label for="species"><b>Species</b></label><br>
-       <input type="checkbox" name="species" value="Brown Trout">  Brown Trout<br>
-       <input type="checkbox" name="species" value="Brook Trout">  Brook Trout<br>
-       <input type="checkbox" name="species" value="Bull Trout">  Bull Trout<br>
-       <input type="checkbox" name="species" value="Rainbow Trout">  Rainbow Trout<br>
-       <input type="checkbox" name="species" value="Yellowstone Cutthroat Trout">  Yellowstone Cutthroat Trout<br>
-       <input type="checkbox" name="species" value="WhiteFish">  Mountain WhiteFish<br>
+       <input type="checkbox" name="species[]" value="Brown Trout">  Brown Trout<br>
+       <input type="checkbox" name="species[]" value="Brook Trout">  Brook Trout<br>
+       <input type="checkbox" name="species[]" value="Bull Trout">  Bull Trout<br>
+       <input type="checkbox" name="species[]" value="Rainbow Trout">  Rainbow Trout<br>
+       <input type="checkbox" name="species[]" value="Yellowstone Cutthroat Trout">  Yellowstone Cutthroat Trout<br>
+       <input type="checkbox" name="species[]" value="WhiteFish">  Mountain WhiteFish<br>
      
 
 
