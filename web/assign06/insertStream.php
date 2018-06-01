@@ -9,5 +9,6 @@
 
 	$statement->execute();
 
-	echo "inserted into database"; 
+	header("Location: addInfo.php");
+	die();
 ?>

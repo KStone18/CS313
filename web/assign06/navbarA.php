@@ -17,9 +17,12 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
 
-        <li><a href="addInfo.php">
-          <span class="glyphicon glyphicon-plus" id=""></span>
+        <li><a href="addSite.php">
+          <span class="glyphicon glyphicon-plus" id="stream"> Site</span>
+        </a></li>
 
+        <li><a href="addInfo.php">
+          <span class="glyphicon glyphicon-plus" id="stream"> Stream</span>
         </a></li>
 
         <li class="nav-item dropdown">
