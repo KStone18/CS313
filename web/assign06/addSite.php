@@ -12,6 +12,19 @@
       <h1>Add Site to Database</h1>
       <hr>
 
+      <label for="Stream"><b>Select Stream</b></label>
+      <div class="form-group">
+        <select name="stream" class="form-control" id="sel1">
+          <option value="none"></option>
+        <?php 
+          $valueName = "";
+            foreach ($db->query('SELECT DISTINCT name FROM stream') as $row) {
+                echo '<option value="'. $row['name'].'">' . $row['name'] . '</option>';
+            } 
+         ?>          
+        </select>
+        <br>
+      </div>
 
 
       <label for="SiteName"><b>Site Name</b></label>
