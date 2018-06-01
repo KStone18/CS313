@@ -49,7 +49,7 @@
       <select class="selectpicker" name="gender" title="Choose one of the following...">
         <option value="true">Yes</option>
         <option value="false">No</option>
-      </select> <br> 
+      </select> <br><br>
 
       <label for="species"><b>Species</b></label><br>
        <input type="checkbox" name="species" value="Brown Trout">  Brown Trout<br>
