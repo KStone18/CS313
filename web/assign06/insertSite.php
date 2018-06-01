@@ -1,7 +1,8 @@
 <?php
 	include('database.php');
+	var_dump($_POST);
 	
-	$stream_id = htmlspecialchars($_POST["stream"])
+	$stream_id = htmlspecialchars($_POST["stream"]);
 	$siteName = htmlspecialchars($_POST["siteName"]);
     $latitude = htmlspecialchars($_POST["Latitude"]);
     $longitude = htmlspecialchars($_POST["Longitude"]);
