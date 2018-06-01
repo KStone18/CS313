@@ -13,7 +13,8 @@
 
 	$stream_id = = $pdo->lastInsertId('stream_id_seq');
 	
-	echo $stream_id;
+	var_dump($_POST);
+	echo "$stream_id";
 	?> 
 	
 	<!-- /*$query = "INSERT INTO site (name, description, latitude, longitude, stream_id) VALUES (:name, :description, :latitude, :longitude, :stream_id)";
