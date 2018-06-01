@@ -14,7 +14,7 @@
 	$species = htmlspecialchars($_POST["species"]);
 	
 
-	$stream_id = $pdo->lastInsertId('stream_id_seq');
+	$stream_id = $pdo->lastInsertId(sequence_name);
 	var_dump($_POST);
 	
 	// var_dump($_POST);
