@@ -63,7 +63,7 @@
 
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->
-        <button type="submit" class="btn btn-primary btn-md signupbtn">Add Information</button>  
+        <button type="submit" class="btn btn-primary btn-md addInfoBtn">Add Information</button>  
        
       </div>
     </div>
