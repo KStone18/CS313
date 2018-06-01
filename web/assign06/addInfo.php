@@ -9,12 +9,12 @@
 
  	 <form action="profile.php" method="post" style="border:1px solid #ccc">
     <div class="containerSign">
-      <h1>New </h1>
-      <p>Please fill in this form to create an account.</p>
+      <h1>Create New Site</h1>
       <hr>
 
       <label for="StreamName"><b>Stream Name</b></label>
       <input type="text" placeholder="Enter Stream Name" name="streamName" required>
+      <hr>
 
       <label for="SiteName"><b>Site Name</b></label>
       <input type="text" placeholder="Enter Site name" name="siteName" required>
