@@ -1,6 +1,6 @@
 <?php
 	include('database.php');
-	var_dump($_POST);
+	//var_dump($_POST);
 	
 	$stream_id = htmlspecialchars($_POST["stream"]);
 	$siteName = htmlspecialchars($_POST["siteName"]);
@@ -17,22 +17,21 @@
 
 	//$stream_id = $PDO->lastInsertId('stream_id_seq');
 
-	//var_dump($_POST);
-	echo "$stream_id";
+
+
 
 	
-	// $query = "INSERT INTO site (name, description, latitude, longitude, stream_id) VALUES (:name, :description, :latitude, :longitude, :stream_id)";
+	$query = "INSERT INTO site (name, description, latitude, longitude, stream_id) VALUES (:name, :description, :latitude, :longitude, :stream_id)";
 
-	// $statement = $db->prepare($query);
-	// $statement->bindValue(":name", $streamName, PDO::PARAM_STR);
-	// $statement->bindValue(":description"), $description, PDO::PARAM_STR);
-	// $statement->bindValue(":latitude"), $latitude, PDO::PARAM_STR);
-	// $statement->bindValue(":longitude"), $longitude, PDO::PARAM_STR);
-	// $statement->bindValue(":stream_id"), $stream_id, PDO::PARAM_INT);
+	$statement = $db->prepare($query);
+	$statemetn->bindValue(":name", $siteName, PDO::PARAM_STR);
+	$statement->bindValue(":description", $description, PDO::PARAM_STR);
+	$statement->bindValue(":latitude", $latitude, PDO::PARAM_STR);
+	$statement->bindValue(":longitude", $longitude, PDO::PARAM_STR);
+	$statement->bindValue(":stream_id", $stream_id, PDO::PARAM_INT);
 
+	$statement->execute();
 
-	// $statement->execute();
-
-	//header("Location: addInfo.php");
-	//die();
+	header("Location: addInfo.php");
+	die();
 	?>
