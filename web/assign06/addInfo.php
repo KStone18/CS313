@@ -33,7 +33,7 @@
       <input type="text" placeholder="Add Journal Name" name="journalName" required>
 
       <label for="date"><b>Date</b></label>
-      <input type="date" name="date" required><br><br>
+      <input type="date" name="date" placeholder="mm/dd/yyyy" required><br><br>
 
       <label for="content"><b>Journal Content</b></label>
       <textarea name="contentOfJournal" placeholder="Add Content" required></textarea>
