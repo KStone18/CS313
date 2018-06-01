@@ -37,7 +37,8 @@
 
       <label for="content"><b>Journal Content</b></label>
       <textarea name="contentOfJournal" placeholder="Add Content" required></textarea>
-
+      <hr>
+      
       <label for="isMale"><b>Gender</b></label>
       <select class="selectpicker" name="gender" title="Choose one of the following...">
         <option value="true">Male</option>
@@ -51,15 +52,14 @@
       </select> <br> 
 
       <label for="species"><b>Species</b></label>
-     <select class="selectpicker" multiple>
-        <option value="BrownTrout">Brown Trout</option>
-        <option value="BrookTrout">Brook Trout</option>
-        <option value="BullTrout">Bull Trout</option>
-        <option value="RainbowTrout">Rainbow Trout</option>
-        <option value="YellowstoneCutthroatTrout">Yellowstone Cutthroat Trout</option>
-        <option value="Whitefish">Mountain Whitefish</option>
-
-      </select>
+       <input type="checkbox" name="species" value="Brown Trout">Trout<br>
+       <input type="checkbox" name="species" value="Brook Trout">Trout<br>
+       <input type="checkbox" name="species" value="Bull Trout">Trout<br>
+       <input type="checkbox" name="species" value="Rainbow Trout">Trout<br>
+       <input type="checkbox" name="species" value="Yellowstone Cutthroat Trout">Trout<br>
+       <input type="checkbox" name="species" value="WhiteFish">Trout<br>
+     
+     
 
      <!--  <label for="psw-repeat"><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
