@@ -33,7 +33,7 @@
       <input type="text" placeholder="Add Journal Name" name="journalName" required>
 
       <label for="date"><b>Date</b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date" required><br>
 
       <label for="content"><b>Description of site</b></label>
       <textarea name="contentOfJournal" placeholder="Add Content" required></textarea>
@@ -44,7 +44,7 @@
         <option value="false">Female</option>
       </select>
 
-      <label for="isPregnant"><b>Pregnant Yes or NO</b></label>
+      <label style="margin-left: 20px" for="isPregnant"><b>Pregnant Yes or NO</b></label>
       <select class="selectpicker" name="gender" title="Choose one of the following...">
         <option value="true">Yes</option>
         <option value="false">No</option>
