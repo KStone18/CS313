@@ -51,13 +51,14 @@
       </select> <br> 
 
       <label for="species"><b>Species</b></label>
-      <select class="selectpicker" multiple name="species" title="Choose from the following...">
+     <select class="selectpicker" multiple>
         <option value="BrownTrout">Brown Trout</option>
         <option value="BrookTrout">Brook Trout</option>
         <option value="BullTrout">Bull Trout</option>
         <option value="RainbowTrout">Rainbow Trout</option>
         <option value="YellowstoneCutthroatTrout">Yellowstone Cutthroat Trout</option>
         <option value="Whitefish">Mountain Whitefish</option>
+
       </select>
 
      <!--  <label for="psw-repeat"><b>Repeat Password</b></label>
@@ -68,6 +69,10 @@
       </label>
       
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+
+
+
 
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->
