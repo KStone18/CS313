@@ -51,7 +51,7 @@
       </select> <br> 
 
       <label for="species"><b>Species</b></label>
-      <select class="selectpicker" multiple name="species" title="Choose from the following...">
+      <select class="selectpicker" name="species" title="Choose from the following...">
         <option value="BrownTrout">Brown Trout</option>
         <option value="BrookTrout">Brook Trout</option>
         <option value="BullTrout">Bull Trout</option>
