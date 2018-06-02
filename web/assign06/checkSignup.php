@@ -16,6 +16,8 @@ if ($password != $rptPassword) {
 	header("Location: home.php");
 }
 
+$isIN = false;
+
 //echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
  	//echo $row["username"] . " " . $row["password"];
@@ -30,9 +32,12 @@ if ($password != $rptPassword) {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
         header("Location: login.php");
+        $isIN = true;
         break;
     }
-    else
+}
+
+    if(!$isIn)
     {
 
     	$_SESSION["user_Name"] = $userName;
@@ -50,7 +55,6 @@ if ($password != $rptPassword) {
     }
     
 
-  } 
 
 
 ?>	
