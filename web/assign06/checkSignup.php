@@ -2,7 +2,7 @@
 session_start();
 include('database.php');
 
-$userName = htmlspecialchars($_POST["uname"]);
+$userName = htmlspecialchars($_POST["uName"]);
 $password = htmlspecialchars($_POST["psw"]);
 $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 
