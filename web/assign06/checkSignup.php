@@ -6,7 +6,9 @@ $userName = htmlspecialchars($_POST["uname"]);
 $password = htmlspecialchars($_POST["psw"]);
 $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 
+var_dump($_POST);
 if ($password == $rptPassword) {
+	echo "inside if"
 	$_SESSION["message"] = "Passwords do not Match";
 	header("Location: home.php");
 }
