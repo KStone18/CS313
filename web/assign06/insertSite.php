@@ -27,7 +27,7 @@
 
 	echo "We are here";
 	$site_id = $pdo->lastInsertId('site_id_seq');
-
+	echo $site_id;
 	//echo "$site_id";
 
 	// $query2 = "INSERT INTO journal (name, date, content, site_id, author_id) VALUES (:name, :date, :content, :site_id, :author_id)";
