@@ -26,7 +26,7 @@
 	$statement->execute();
 
 	echo "We are here";
-	$site_id = $db->lastInsertId('site_id_seq');
+	$site_id = $pdo->lastInsertId('site_id_seq');
 
 	//echo "$site_id";
 
