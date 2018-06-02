@@ -11,7 +11,7 @@
  <title> Data Collection </title>
   <?php include('header.php');?>
  
-  <form action="profile.php" method="post" style="border:1px solid #ccc">
+  <form action="checkSignup.php" method="post" style="border:1px solid #ccc">
     <div class="containerSign">
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
