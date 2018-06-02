@@ -17,13 +17,12 @@ if ($password != $rptPassword) {
 
 //echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
- 	echo $row["username"] . " " . $row["password"];
- 	echo $userName . " " . $password;
+ 	//echo $row["username"] . " " . $row["password"];
+ 	//echo $userName . " " . $password;
   	//echo "username: " . $row["username"] . "password: " . $row["password"];
    
     if ($userName == $row["username"] and $password == $row["password"])
     {
-    	echo "we are in the right spot";
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
         header("Location: login.php");
@@ -32,14 +31,19 @@ if ($password != $rptPassword) {
     }
     else
     {
-    	echo "in the else";
+    	$_SESSION["user_Name"] = $userName;
+
+    	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
+
+    	$statement = db->prepare($query);
+    	$statement->bindValue(":username", $userName, PDO::PARAM_STR);
+    	$statement->bindValue(":password", $password, PDO::PARAM_STR);
+    	$statement->execute();
+      	header("Location: profile.php");
+      	die();
+      	break;
     }
-    // else
-    // {
-    // 	$_SESSION["user_Name"] = $userName;
-    //   	header("Location: profile.php");
-    //   	break;
-    // }
+    
 
   } 
 
