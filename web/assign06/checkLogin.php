@@ -11,7 +11,9 @@ $password = htmlspecialchars($_POST["psw"]);
   	//echo "username: " . $row["username"] . "password: " . $row["password"];
     if ($userName == $row["username"] and $password == $row["password"])
     {
-    	echo "true"; 
+    	$SESSION["user_Name"] = $userName;
+        header("Location: profile.php");
+
     }
     else
     {
