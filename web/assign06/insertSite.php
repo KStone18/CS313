@@ -28,15 +28,16 @@
 	echo "We are here";
 	$site_id = $db->lastInsertId('site_id_seq');
 
-	echo $site_id;
+	//echo $site_id;
 
-	// $query2 = "INSERT INTO journal (name, date, content, site_id, author_id) VALUES (:name, :date, :content, :site_id, :author_id)";
+	//  $query2 = "INSERT INTO journal (name, date, content, site_id, author_id) VALUES (:name, :date, :content, :site_id, :author_id)";
 
 	// $statement2 = $db->prepare($query2);
 	// $statement2->bindValue(":name", $journalName, PDO::PARAM_STR);
 	// $statement2->bindValue(":date", $date, PDO::PARAM_STR);
 	// $statement2->bindValue(":content", $content, PDO::PARAM_STR);
 	// $statement2->bindValue(":site_id", $site_id, PDO::PARAM_INT);
+	// //$statement2->bindValue(":author_id", )
 	// $statement2->execute();
 
 	// $query3 = ""
