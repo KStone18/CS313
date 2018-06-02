@@ -17,7 +17,7 @@ $password = htmlspecialchars($_POST["psw"]);
     }
     else
     {
-    	$SESSION["message"] = "You are not signed up. Please create an account!";
+    	$_SESSION["message"] = "You are not signed up. Please create an account!";
       	header("Location: home.php");
     }
 
