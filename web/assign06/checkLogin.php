@@ -17,7 +17,8 @@ $password = htmlspecialchars($_POST["psw"]);
     }
     else
     {
-    	echo "false";
+    	echo "You have not signed up. Please signup before continuing!";
+      	header("Location: home.php");
     }
  //       {
  //         $SESSION["user_Name"] = $userName;
