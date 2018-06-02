@@ -16,24 +16,24 @@ if ($password != $rptPassword) {
 }
 
 //echo $userName . " " . $password;
-  // foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
- 	// echo $row["username"] . " " . $row["password"];
-  // 	//echo "username: " . $row["username"] . "password: " . $row["password"];
-  //   if ($userName == $row["username"] and $password == $row["password"])
-  //   {
-  //   	$_SESSION["messageL"] = "You have an account already. Please login";
-  //       header("Location: login.php");
-  //       break;
+  foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
+ 	echo $row["username"] . " " . $row["password"];
+  	//echo "username: " . $row["username"] . "password: " . $row["password"];
+    if ($userName == $row["username"] and $password == $row["password"])
+    {
+    	$_SESSION["messageL"] = "You have an account already. Please login";
+        header("Location: login.php");
+        break;
 
-  //   }
-  //   else
-  //   {
-  //   	$_SESSION["user_Name"] = $userName;
-  //     	header("Location: profile.php");
-  //     	break;
-  //   }
+    }
+    else
+    {
+    	$_SESSION["user_Name"] = $userName;
+      	header("Location: profile.php");
+      	break;
+    }
 
-  // } 
+  } 
 
 
 ?>	
