@@ -29,6 +29,10 @@ if ($password != $rptPassword) {
         break;
 
     }
+    else
+    {
+    	echo "in the else";
+    }
     // else
     // {
     // 	$_SESSION["user_Name"] = $userName;
