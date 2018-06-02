@@ -30,7 +30,8 @@ if ($password != $rptPassword) {
         break;
     }
     else
-    // {
+    {
+    	echo "in else"; 
     // 	$_SESSION["user_Name"] = $userName;
 
     // 	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
