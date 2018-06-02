@@ -31,7 +31,7 @@ if ($password != $rptPassword) {
     }
     else
     {
-    	
+
     	$_SESSION["user_Name"] = $userName;
 
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
@@ -41,7 +41,7 @@ if ($password != $rptPassword) {
     	$statement->bindValue(":password", $password, PDO::PARAM_STR);
     	$statement->execute();
       	header("Location: profile.php");
-      	die();
+      	
       	break;
     }
     
