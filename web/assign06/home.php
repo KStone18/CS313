@@ -4,6 +4,10 @@
     echo '<script type="text/javascript">alert("' . $_SESSION['message'] . '");</script>';
     unset($_SESSION['message']);
 }
+  
+  if (isset($_SESSION['user_Name'])) {
+    unset($_SESSION['user_Name']);
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
