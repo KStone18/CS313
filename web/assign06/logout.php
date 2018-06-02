@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo "here". $_SESSION["user_Name"] . " "; 
 
 // if(isset($_SESSION["user_Name"])) {
