@@ -1,6 +1,10 @@
 <?php
 session_start();
 include('database.php');
+if(isset($_SESSION["user_Name"])) {
+	unset($_SESSION["user_Name"]);
+	session_destroy();
+}
 
 $userName = htmlspecialchars($_POST["uName"]);
 $password = htmlspecialchars($_POST["psw"]);
@@ -41,7 +45,7 @@ if ($password != $rptPassword) {
     	$statement->bindValue(":password", $password, PDO::PARAM_STR);
     	$statement->execute();
       	header("Location: profile.php");
-      	
+      	die();
       	break;
     }
     
