@@ -30,18 +30,18 @@ if ($password != $rptPassword) {
         break;
     }
     else
-    {
-    	$_SESSION["user_Name"] = $userName;
+    // {
+    // 	$_SESSION["user_Name"] = $userName;
 
-    	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
+    // 	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
-    	$statement = $db->prepare($query);
-    	$statement->bindValue(":username", $userName, PDO::PARAM_STR);
-    	$statement->bindValue(":password", $password, PDO::PARAM_STR);
-    	$statement->execute();
-      	header("Location: profile.php");
-      	die();
-      	break;
+    // 	$statement = $db->prepare($query);
+    // 	$statement->bindValue(":username", $userName, PDO::PARAM_STR);
+    // 	$statement->bindValue(":password", $password, PDO::PARAM_STR);
+    // 	$statement->execute();
+    //   	header("Location: profile.php");
+    //   	die();
+    //   	break;
     }
     
 
