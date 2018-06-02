@@ -13,6 +13,7 @@ $password = htmlspecialchars($_POST["psw"]);
     {
     	$SESSION["user_Name"] = $userName;
         header("Location: profile.php");
+        break;
 
     }
     else

@@ -1,18 +1,16 @@
 <?php
   session_start();
-
+  if (isset($_SESSION['message'])) {
+    echo '<script type="text/javascript">alert("' . $_SESSION['message'] . '");</script>';
+    unset($_SESSION['message']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
  <title> Data Collection </title>
-  <?php include('header.php');
-  if (isset($_SESSION['message'])) {
-    echo '<script type="text/javascript">alert("' . $_SESSION['message'] . '");</script>';
-    unset($_SESSION['message']);
-}?>
+  <?php include('header.php');?>
  
-
   <form action="profile.php" method="post" style="border:1px solid #ccc">
     <div class="containerSign">
       <h1>Sign Up</h1>
