@@ -19,11 +19,13 @@ if ($password != $rptPassword) {
 //echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
  	//echo $row["username"] . " " . $row["password"];
- 	echo $userName . " " . $password . " ";
 
-  	echo "username: " . $row["username"] . "password: " . $row["password"];
+ 	echo $userName . " " . $password . " ";
+	echo "username: " . $row["username"] . "password: " . $row["password"];
+
+
    
-    if ($userName == $row["username"] and $password == $row["password"])
+    if ($userName == $row["username"] && $password == $row["password"])
     {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
@@ -34,6 +36,7 @@ if ($password != $rptPassword) {
     {
 
     	$_SESSION["user_Name"] = $userName;
+    	$_SESSION["id"] = $row["id"]; 
 
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
