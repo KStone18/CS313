@@ -15,18 +15,18 @@ if ($password != $rptPassword) {
 	header("Location: home.php");
 }
 
-echo $userName . " " . $password;
+//echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
  	//echo $row["username"] . " " . $row["password"];
- 	//echo $userName . " " . $password;
-  	//echo "username: " . $row["username"] . "password: " . $row["password"];
+ 	echo $userName . " " . $password;
+  	echo "username: " . $row["username"] . "password: " . $row["password"];
    
     if ($userName == $row["username"] and $password == $row["password"])
     {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
         header("Location: login.php");
-        break;
+        
 
     }
     else
