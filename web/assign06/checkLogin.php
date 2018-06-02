@@ -7,7 +7,7 @@ $password = htmlspecialchars($_POST["psw"]);
 
 echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
- 	echo $row;
+ 	echo $row["username"] . " " . $row["password"];
   	//echo "username: " . $row["username"] . "password: " . $row["password"];
     //if ($userName = $row["username"] && $password = $row["password"]);
  //       {
