@@ -15,7 +15,7 @@ if ($password != $rptPassword) {
 	header("Location: home.php");
 }
 
-//echo $userName . " " . $password;
+echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
  	//echo $row["username"] . " " . $row["password"];
  	//echo $userName . " " . $password;
