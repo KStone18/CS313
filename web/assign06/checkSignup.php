@@ -35,7 +35,7 @@ if ($password != $rptPassword) {
 
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
-    	$statement = db->prepare($query);
+    	$statement = $db->prepare($query);
     	$statement->bindValue(":username", $userName, PDO::PARAM_STR);
     	$statement->bindValue(":password", $password, PDO::PARAM_STR);
     	$statement->execute();
