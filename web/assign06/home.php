@@ -5,9 +5,6 @@
     unset($_SESSION['message']);
 }
   
-  if (isset($_SESSION['user_Name'])) {
-    unset($_SESSION['user_Name']);
-  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
