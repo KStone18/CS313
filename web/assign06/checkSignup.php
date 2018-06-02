@@ -7,8 +7,6 @@ $userName = htmlspecialchars($_POST["uName"]);
 $password = htmlspecialchars($_POST["psw"]);
 $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 
-var_dump($_POST);
-
 
 if ($password != $rptPassword) {
 	echo "inside if";
@@ -20,13 +18,7 @@ $isIN = false;
 
 //echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
- 	//echo $row["username"] . " " . $row["password"];
-
- 	echo $userName . " " . $password . " ";
-	echo "username: " . $row["username"] . "password: " . $row["password"];
-
-
-   
+ 	//echo $row["username"] . " " . $row["password"];   
     if ($userName == $row["username"] && $password == $row["password"])
     {
 
