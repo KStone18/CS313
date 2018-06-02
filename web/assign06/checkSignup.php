@@ -26,7 +26,7 @@ if ($password != $rptPassword) {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
         //header("Location: login.php");
-        //break;
+        break;
 
     }
     // else
