@@ -17,19 +17,10 @@ $password = htmlspecialchars($_POST["psw"]);
     }
     else
     {
-    	echo "You have not signed up. Please signup before continuing!";
+    	$SESSION["message"] = "You are not signed up. Please create an account!";
       	header("Location: home.php");
     }
- //       {
- //         $SESSION["user_Name"] = $userName;
- //         header("Location: profile.php");
 
- //       }
- //       else 
- //       {
- //       	echo "You have not signed up. Please signup before continuing!";
- //       	header("Location: home.php");
- //       }
   } 
 
 
