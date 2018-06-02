@@ -50,11 +50,10 @@ $isIN = false;
     	$statement->bindValue(":password", $password, PDO::PARAM_STR);
     	$statement->execute();
       	header("Location: profile.php");
-      	die();
       	break;
     }
     
-
+    die();
 
 
 ?>	
