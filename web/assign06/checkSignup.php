@@ -38,11 +38,12 @@ $isIN = false;
     	$statement->execute();
 
         $_SESSION["user_Name"] = $userName;
-        $_SESSION["id"] = $row["id"]; 
+
+        $_SESSION["id"] = $db->lastInsertId('app_user_id_seq');
 
 
         echo $_SESSION["id"];
-      //	header("Location: profile.php");
+        //	header("Location: profile.php");
       	break;
     }
     
