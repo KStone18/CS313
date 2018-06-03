@@ -3,7 +3,7 @@
 	include('database.php');
 	//var_dump($_SESSION); 
 	
-	//$id = $_SESSION["id"];
+	$id = $_SESSION["id"];
 	//echo $id; 
 
 	//var_dump($_POST);
@@ -34,6 +34,9 @@
 	//echo "We are here";
 	$site_id = $db->lastInsertId('site_id_seq');
 
+
+	echo $site_id; 
+	echo "<br> " . $id;
 
 
 	$query2 = "INSERT INTO journal (name, date, content, site_id, author_id) VALUES (:name, :date, :content, :site_id, :author_id)";
