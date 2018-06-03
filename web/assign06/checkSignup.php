@@ -40,7 +40,9 @@ $isIN = false;
         $_SESSION["user_Name"] = $userName;
         $_SESSION["id"] = $row["id"]; 
 
-      	header("Location: profile.php");
+
+        echo $_SESSION["id"];
+      //	header("Location: profile.php");
       	break;
     }
     
