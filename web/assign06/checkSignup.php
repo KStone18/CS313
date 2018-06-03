@@ -9,7 +9,6 @@ $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 
 
 if ($password != $rptPassword) {
-	echo "inside if";
 	$_SESSION["message"] = "Passwords do not Match";
 	header("Location: home.php");
 }
@@ -30,17 +29,17 @@ $isIN = false;
 }
 
     if(!$isIn)
-    {
-
-    	$_SESSION["user_Name"] = $userName;
-    	$_SESSION["id"] = $row["id"]; 
-
+    {	
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
     	$statement = $db->prepare($query);
     	$statement->bindValue(":username", $userName, PDO::PARAM_STR);
     	$statement->bindValue(":password", $password, PDO::PARAM_STR);
     	$statement->execute();
+
+        $_SESSION["user_Name"] = $userName;
+        $_SESSION["id"] = $row["id"]; 
+
       	header("Location: profile.php");
       	break;
     }
