@@ -43,7 +43,7 @@ $isIN = false;
 
 
         echo $_SESSION["id"];
-        //	header("Location: profile.php");
+    	header("Location: profile.php");
       	break;
     }
     
