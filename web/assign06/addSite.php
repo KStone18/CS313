@@ -51,7 +51,7 @@
       <textarea name="contentOfJournal" placeholder="Add Content" required></textarea>
       <hr>
 
-      <label for="isMale"><b>Gender</b></label>
+     <!--  <label for="isMale"><b>Gender</b></label>
       <select class="selectpicker" name="gender" title="Choose one of the following...">
         <option value="true">Male</option>
         <option value="false">Female</option>
@@ -71,7 +71,7 @@
        <input type="checkbox" name="species[]" value="Yellowstone Cutthroat Trout">  Yellowstone Cutthroat Trout<br>
        <input type="checkbox" name="species[]" value="WhiteFish">  Mountain WhiteFish<br>
      
-
+ -->
 
       <div class="clearfix">
         <!-- <button type="button" class="btn btn-primary btn-md cancelbtn">Cancel</button> -->

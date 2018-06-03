@@ -15,7 +15,7 @@
 	$description = htmlspecialchars($_POST["descriptOfSite"]);
 	$journalName = htmlspecialchars($_POST["journalName"]);
 	$date = htmlspecialchars($_POST["date"]);
-	$content = htmlspecialchars($_POST["contentOfJouranl"]);
+	$content = htmlspecialchars($_POST["contentOfJournal"]);
 	$gender = htmlspecialchars($_POST["gender"]);
 	$pregnant = htmlspecialchars($_POST["pregnant"]);
 	$species = htmlspecialchars($_POST["species"]);
