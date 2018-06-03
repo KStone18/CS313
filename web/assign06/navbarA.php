@@ -17,6 +17,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
 
+        <li><a href="profile.php">
+          <span class="glyphicon glyphicon-plus" id="site"> Search </span>
+        </a></li>
+
         <li><a href="addSite.php">
           <span class="glyphicon glyphicon-plus" id="site"> Site</span>
         </a></li>
