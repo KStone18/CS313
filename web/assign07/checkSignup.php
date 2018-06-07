@@ -25,8 +25,8 @@ $isIN = false;
     {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
-        echo "already found";
-        //header("Location: login.php");
+        //echo "already found";
+        header("Location: login.php");
         $isIN = true;
         break;
     }
@@ -34,7 +34,7 @@ $isIN = false;
 
     if(!$isIn)
     {	
-        echo "inserting";
+        //echo "inserting";
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
     	$statement = $db->prepare($query);
@@ -48,7 +48,7 @@ $isIN = false;
 
 
        // echo $_SESSION["id"];
-    	//header("Location: profile.php");
+    	header("Location: profile.php");
       	break;
     }
     
