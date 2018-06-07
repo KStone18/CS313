@@ -1,4 +1,12 @@
 
+
+input:focus {
+    border:1px solid #b9d4e9;
+    border-top-color:#b6d5ea;
+    border-bottom-color:#b8d4ea;
+    box-shadow:0 0 5px #b9d4e9;
+}
+
 #pswd_info {
     position:absolute;
     bottom:-75px;
