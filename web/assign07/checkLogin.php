@@ -11,7 +11,7 @@ $password = htmlspecialchars($_POST["psw"]);
   	//echo "username: " . $row["username"] . "password: " . $row["password"];
     if ($userName == $row["username"] && password_verify($password, $row['password']))
     {
-    	  $SESSION["user_Name"] = $userName;
+    	  $_SESSION["user_Name"] = $userName;
         $_SESSION["id"] = $row["id"];
         header("Location: profile.php");
         break;

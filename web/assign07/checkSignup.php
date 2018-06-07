@@ -18,9 +18,7 @@ if ($password != $rptPassword) {
 
 $isIN = false;
 
-//echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
- 	//echo $row["username"] . " " . $row["password"];   
     if ($userName == $row["username"] && password_verify($password, $row['password']))
     {
 
@@ -34,7 +32,7 @@ $isIN = false;
 
     if(!$isIn)
     {	
-        echo "inserting";
+        
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
     	$statement = $db->prepare($query);
