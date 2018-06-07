@@ -9,7 +9,7 @@ $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 
 $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
-echo $hashPassword;
+//echo $hashPassword;
 
 if ($password != $rptPassword) {
 	$_SESSION["message"] = "Passwords do not Match";
@@ -21,7 +21,7 @@ $isIN = false;
 //echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
  	//echo $row["username"] . " " . $row["password"];   
-    if ($userName == $row["username"] && $password == $row["password"])
+    if ($userName == $row["username"] && password_verify($password, $row['password']))
     {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
@@ -34,7 +34,7 @@ $isIN = false;
 
     if(!$isIn)
     {	
-        //echo "inserting";
+        echo "inserting";
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
     	$statement = $db->prepare($query);
