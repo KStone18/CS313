@@ -9,6 +9,8 @@ $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 
 $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
+echo $hashPassword;
+
 if ($password != $rptPassword) {
 	$_SESSION["message"] = "Passwords do not Match";
 	header("Location: home.php");
@@ -19,11 +21,12 @@ $isIN = false;
 //echo $userName . " " . $password;
   foreach ($db->query('SELECT id, username, password FROM app_user') as $row) {
  	//echo $row["username"] . " " . $row["password"];   
-    if ($userName == $row["username"] && password_verify($password, $row['password']))
+    if ($userName == $row["username"] && $password == $row["password"])
     {
 
     	$_SESSION["messageL"] = "You have an account already. Please login";
-        header("Location: login.php");
+        echo "already found";
+        //header("Location: login.php");
         $isIN = true;
         break;
     }
@@ -31,11 +34,12 @@ $isIN = false;
 
     if(!$isIn)
     {	
+        echo "inserting";
     	$query = "INSERT INTO app_user (username, password) VALUES (:username, :password)";
 
     	$statement = $db->prepare($query);
     	$statement->bindValue(":username", $userName, PDO::PARAM_STR);
-    	$statement->bindValue(":password", $hashpassword, PDO::PARAM_STR);
+    	$statement->bindValue(":password", $hashPassword, PDO::PARAM_STR);
     	$statement->execute();
 
         $_SESSION["user_Name"] = $userName;
@@ -44,7 +48,7 @@ $isIN = false;
 
 
        // echo $_SESSION["id"];
-    	header("Location: profile.php");
+    	//header("Location: profile.php");
       	break;
     }
     
