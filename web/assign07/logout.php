@@ -1,10 +1,11 @@
 <?php
+
+// must be used in order to use sessions array
 session_start();
-echo "here". $_SESSION["user_Name"] . " "; 
 
 if(isset($_SESSION["user_Name"])) {
 
-	echo "inside";
+	
 	unset($_SESSION["user_Name"]);
 
 	session_destroy();
