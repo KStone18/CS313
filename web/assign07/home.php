@@ -44,7 +44,7 @@
     </div>
   </form>
 
-  <div id="message">
+  <div id="message" class="containerSign">
   <h3>Password must contain the following:</h3>
   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
   <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
