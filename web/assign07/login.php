@@ -19,7 +19,7 @@
 	    <input type="text" placeholder="Enter Username" name="uname" required>
 
 	    <label for="psw"><b>Password</b></label>
-	    <input type="password" id="pswRepeat" name="psw-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 	        
 	    <label>
 	      <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -102,8 +102,6 @@
       }
     }
 </script>
-
-
 
 </body>
 </html>
