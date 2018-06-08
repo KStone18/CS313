@@ -11,8 +11,8 @@ $rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
 // Check if passwords match 
-if ($password != $rptPassword) {
-	$_SESSION["message"] = "Passwords do not Match";
+if ($password != $rptPassword && strlen($password) < 8) {
+	$_SESSION["message"] = "Passwords do not Match or are to short. Passwords should be longer than 8 characters.";
 	header("Location: home.php");
 }
 
