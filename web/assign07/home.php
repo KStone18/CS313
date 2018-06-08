@@ -9,8 +9,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script> var myInput = document.getElementById("psw");
-var letter = document.getElementById("letter");
+  <script> 
+    var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
@@ -65,7 +66,8 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
-}</script>
+}
+</script>
  <title> Data Collection </title>
   <?php include('header.php');?>
  
