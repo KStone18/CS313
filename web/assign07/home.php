@@ -1,8 +1,8 @@
 <?php
   session_start();
-  if (isset($_SESSION['message'])) {
-    echo '<script type="text/javascript">alert("' . $_SESSION['message'] . '");</script>';
-    unset($_SESSION['message']);
+  if (isset($_SESSION['passBox'])) {
+    echo '<script type="text/javascript">alert("' . $_SESSION['passBox'] . '");</script>';
+    unset($_SESSION['passBox']);
 }
   
 ?>
@@ -45,7 +45,7 @@
   </form>
 
   <!-- This code was used from w3schools  -->
-  <div id="message" class="containerSign">
+  <div id="passBox" class="containerSign">
   <h3>Password must contain the following:</h3>
   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
   <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
@@ -54,27 +54,27 @@
 </div>
 <!-- This code was used from w3schools  -->
 <script> 
-    var myInput = document.getElementById("psw");
+    var passInput = document.getElementById("psw");
     var letter = document.getElementById("letter");
     var capital = document.getElementById("capital");
     var number = document.getElementById("number");
     var length = document.getElementById("length");
 
-    // When the user clicks on the password field, show the message box
-    myInput.onfocus = function() {
-        document.getElementById("message").style.display = "block";
+    // When the user clicks on the password field, show the passBox box
+    passInput.onfocus = function() {
+        document.getElementById("passBox").style.display = "block";
     }
 
-    // When the user clicks outside of the password field, hide the message box
-    myInput.onblur = function() {
-        document.getElementById("message").style.display = "none";
+    // When the user clicks outside of the password field, hide the passBox box
+    passInput.onblur = function() {
+        document.getElementById("passBox").style.display = "none";
     }
 
     // When the user starts to type something inside the password field
-    myInput.onkeyup = function() {
+    passInput.onkeyup = function() {
       // Validate lowercase letters
       var lowerCaseLetters = /[a-z]/g;
-      if(myInput.value.match(lowerCaseLetters)) {  
+      if(passInput.value.match(lowerCaseLetters)) {  
         letter.classList.remove("invalid");
         letter.classList.add("valid");
       } else {
@@ -84,7 +84,7 @@
       
       // Validate capital letters
       var upperCaseLetters = /[A-Z]/g;
-      if(myInput.value.match(upperCaseLetters)) {  
+      if(passInput.value.match(upperCaseLetters)) {  
         capital.classList.remove("invalid");
         capital.classList.add("valid");
       } else {
@@ -94,7 +94,7 @@
 
       // Validate numbers
       var numbers = /[0-9]/g;
-      if(myInput.value.match(numbers)) {  
+      if(passInput.value.match(numbers)) {  
         number.classList.remove("invalid");
         number.classList.add("valid");
       } else {
@@ -103,7 +103,7 @@
       }
       
       // Validate length
-      if(myInput.value.length >= 8) {
+      if(passInput.value.length >= 8) {
         length.classList.remove("invalid");
         length.classList.add("valid");
       } else {
